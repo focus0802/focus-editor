@@ -1,0 +1,112 @@
+.focus-editor {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  .focus-editor-toolbar {
+    border-bottom: 1px solid #d9d9d9;
+    .focus-editor-controls-container {
+      display: inline-block;
+      position: relative;
+    }
+    .focus-editor-link-container {
+      display: inline-block;
+      position: relative;
+      .focus-editor-link-window {
+        margin-top: 4px;
+        margin-left: -120px;
+        width: 240px;
+        position: absolute;
+        background: #f5f7f9;
+        padding: 8px;
+        box-shadow: 0 2px 4px #d9d9d9;
+        input {
+          display: block;
+          width: 220px;
+          clear: both;
+          height: 28px;
+          line-height: 28px;
+          font-size: 14px;
+          padding: 0 8px;
+        }
+        input:focus {
+          outline: none;
+        }
+        .focus-editor-link-window-actions {
+          margin-top: 8px;
+          float: right;
+        }
+      }
+    }
+    .focus-editor-toolbar-button {
+      margin: 4px;
+      display: inline-block;
+      font-size: 14px;
+      text-align: center;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      cursor: pointer;
+      color: #5d5d5d;
+      transition: all .3s;
+    }
+    .focus-editor-toolbar-button:not(.focus-editor-toolbar-button-active):not(.focus-editor-toolbar-button-disabled):hover {
+      color: #000;
+    }
+    .focus-editor-toolbar-button-active {
+      color: #108ee9;
+    }
+    .focus-editor-toolbar-button-disabled {
+      color: #cccccc;
+      cursor: not-allowed;
+    }
+  }
+  .focus-editor-container {
+    padding: 4px;
+    .align-left {
+      text-align: left;
+    }
+    .align-center {
+      text-align: center;
+    }
+    .align-right {
+      text-align: right;
+    }
+    .align-justify {
+      text-align: justify;
+    }
+  }
+}
+
+.focus-editor-button {
+  height: 32px;
+  font-size: 14px;
+  margin: 0 4px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  padding: 0 16px;
+  color: #777778;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.focus-editor-button:focus {
+  outline: none;
+}
+
+.focus-editor-button:active {
+  background: #f3f3f3;
+  border: 1px solid #999;
+  color: #5d5d5d;
+}
+
+.focus-editor-button-primary {
+  border: 1px solid #108ee9;
+  background: #108ee9;
+  color: #ffffff;
+}
+
+.focus-editor-button-primary:active {
+  border: 1px solid #0e77ce;
+  background: #0e77ce;
+  color: #ffffff;
+}
