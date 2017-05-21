@@ -1,8 +1,20 @@
+.focus-editor-fullscreen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+.focus-editor-fullscreen .focus-editor-container {
+  overflow: scroll;
+}
 .focus-editor {
   border: 1px solid #d9d9d9;
   border-radius: 4px;
 }
 .focus-editor .focus-editor-toolbar {
+  background: #fff;
   border-bottom: 1px solid #d9d9d9;
 }
 .focus-editor .focus-editor-toolbar .focus-editor-controls-container {
@@ -74,6 +86,17 @@
 }
 .focus-editor .focus-editor-container .align-justify {
   text-align: justify;
+}
+.focus-editor .focus-editor-container ul,
+.focus-editor .focus-editor-container ol {
+  margin: 16px;
+  padding: 0;
+}
+.focus-editor .focus-editor-container ul {
+  list-style-type: disc;
+}
+.focus-editor .focus-editor-container ol {
+  list-style-type: decimal;
 }
 .focus-editor-button {
   height: 32px;

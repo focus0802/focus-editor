@@ -4,6 +4,8 @@ import { EditorState, RichUtils } from 'draft-js';
 import ToolbarButton from './ToolbarButton';
 
 const ListControls = (props) => {
+  const type = props.editorState.getCurrentContent().getBlockForKey(
+    props.editorState.getSelection().getFocusKey()).getType();
   return (<div className="focus-editor-controls-container">
     <ToolbarButton
       label={<i className="fa fa-list-ul" />}
@@ -13,7 +15,7 @@ const ListControls = (props) => {
         );
       }}
       tooltip="无序列表"
-      active={props.editorState.getCurrentContent().getFirstBlock().getType() === 'unordered-list-item'}
+      active={type === 'unordered-list-item'}
     />
     <ToolbarButton
       label={<i className="fa fa-list-ol" />}
@@ -23,7 +25,7 @@ const ListControls = (props) => {
         );
       }}
       tooltip="有序列表"
-      active={props.editorState.getCurrentContent().getFirstBlock().getType() === 'ordered-list-item'}
+      active={type === 'ordered-list-item'}
     />
   </div>);
 };

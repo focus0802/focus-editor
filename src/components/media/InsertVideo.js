@@ -4,7 +4,7 @@ import { EditorState, AtomicBlockUtils } from 'draft-js';
 import { Modal, Form, Input, Upload, Icon } from 'antd';
 import ToolbarButton from '../ToolbarButton';
 
-class InsertAudio extends React.Component {
+class InsertVideo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,10 +14,7 @@ class InsertAudio extends React.Component {
   }
 
   closeModal() {
-    this.setState({
-      modalVisible: false,
-      audio: undefined,
-    });
+    this.setState({ modalVisible: false });
     this.props.form.resetFields();
   }
 
@@ -29,15 +26,14 @@ class InsertAudio extends React.Component {
     const { getFieldDecorator } = this.props.form;
     return (<div className="focus-editor-controls-container">
       <ToolbarButton
-        label={<i className="fa fa-music" />}
+        label={<i className="fa fa-video-camera" />}
         onClick={() => {
-          this.setState({ modalVisible: true });
         }}
-        tooltip="插入音频"
+        tooltip="插入视频"
       />
       <Modal
+        title="插入视频"
         visible={this.state.modalVisible}
-        title="插入音频"
         maskClosable={false}
         onCancel={this.closeModal}
         onOk={() => {
@@ -46,9 +42,9 @@ class InsertAudio extends React.Component {
               const { editorState } = this.props;
               const contentState = editorState.getCurrentContent();
               const contentStateWithEntity = contentState.createEntity(
-                'audio',
+                'video',
                 'IMMUTABLE',
-                { src: values.src },
+                values,
               );
               const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
               const newEditorState = EditorState.set(
@@ -56,11 +52,7 @@ class InsertAudio extends React.Component {
                 { currentContent: contentStateWithEntity },
               );
               this.props.onChange(
-                AtomicBlockUtils.insertAtomicBlock(
-                  newEditorState,
-                  entityKey,
-                  ' ',
-                ),
+                AtomicBlockUtils.insertAtomicBlock(newEditorState, entityKey, ' '),
               );
               this.closeModal();
             }
@@ -68,36 +60,51 @@ class InsertAudio extends React.Component {
         }}
       >
         <Upload.Dragger
-          accept="audio/*"
+          accept="video/*"
           beforeUpload={(file, fileList) => {
             const callback = (url) => {
               this.props.form.setFields({ src: { value: url } });
-              this.setState({ audio: url });
+              this.setState({ video: url });
             };
             this.props.onUpload(file, fileList, callback);
             return false;
           }}
         >
-          {this.state.audio || this.props.currentAudio ?
-            <audio
-              controls
-              src={this.state.audio || this.props.currentAudio.src}
-              style={{ display: 'block', minHeight: 122, maxHeight: 400, maxWidth: '100%', margin: '0 auto' }}
+          {this.state.video || this.props.currentVideo ?
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100%',
+                height: 400,
+              }}
             >
-              <track kind="captions" />
-            </audio>
+              <video
+                src={this.state.video || this.props.currentVideo.src}
+                style={{
+                  display: 'block',
+                  maxHeight: 400,
+                  maxWidth: '100%',
+                }}
+                controls
+              >
+                <track kind="captions" />
+              </video>
+            </div>
             :
             <div style={{ margin: 16 }}>
               <p style={{ fontSize: 48, textAlign: 'center', color: '#108ee9' }}>
                 <Icon type="cloud-upload-o" />
               </p>
-              <p style={{ color: '#999' }}>点击或者拖动音频至此上传</p>
+              <p style={{ color: '#999' }}>点击或者拖动图片至此上传</p>
             </div>
           }
         </Upload.Dragger>
         <Form style={{ marginTop: 16 }}>
           <Form.Item
-            label="音频地址"
+            label="视频地址"
             {...formItemLayout}
             hasFeedback
           >
@@ -105,16 +112,11 @@ class InsertAudio extends React.Component {
               rules: [
                 {
                   required: true,
-                  message: '音频地址不能为空',
+                  message: '视频地址不能为空',
                 },
               ],
             })(
-              <Input
-                placeholder="请输入音频地址"
-                onBlur={(e) => {
-                  this.setState({ audio: e.target.value });
-                }}
-              />,
+              <Input placeholder="请输入视频地址" />,
             )}
           </Form.Item>
         </Form>
@@ -122,8 +124,8 @@ class InsertAudio extends React.Component {
     </div>);
   }
 }
-InsertAudio.propTypes = {
+InsertVideo.propTypes = {
   editorState: PropTypes.instanceOf(EditorState).isRequired,
   onChange: PropTypes.func.isRequired,
 };
-export default Form.create()(InsertAudio);
+export default Form.create()(InsertVideo);

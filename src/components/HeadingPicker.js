@@ -26,11 +26,20 @@ const HeadingPicker = (props) => {
       type: 'unstyled',
     },
   ];
+  let current;
+  headings.forEach((item) => {
+    if (props.editorState.getCurrentContent().getBlockForKey(
+        props.editorState.getSelection().getFocusKey(),
+      ).getType() === item.type) {
+      current = item.type;
+    }
+  });
   return (<div className="focus-editor-controls-container">
     <Select
       defaultValue="unstyled"
-      style={{ width: 160, display: 'inline-block', marginTop: -2, fontSize: 14 }}
+      style={{ width: 160, margin: '0 4px' }}
       optionLabelProp="title"
+      value={current}
       onChange={(value) => {
         props.onChange(
           RichUtils.toggleBlockType(props.editorState, value),

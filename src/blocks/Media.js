@@ -1,15 +1,20 @@
 import React from 'react';
+import Audio from './Audio';
+import Image from './Image';
+import Video from './Video';
+import Flash from './Flash';
 
 const Media = (props) => {
   const entity = props.contentState.getEntity(props.block.getEntityAt(0));
-  const { src } = entity.getData();
   switch (entity.getType()) {
     case 'audio':
-      return (
-        <audio controls src={src}>
-          <track kind="captions" />
-        </audio>
-      );
+      return <Audio {...entity.getData()} />;
+    case 'image':
+      return <Image {...entity.getData()} />;
+    case 'video':
+      return <Video {...entity.getData()} />;
+    case 'flash':
+      return <Flash {...entity.getData()} />;
     default:
       return null;
   }

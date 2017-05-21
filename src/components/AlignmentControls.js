@@ -14,33 +14,34 @@ const AlignmentControls = (props) => {
       'change-block-data',
     ));
   };
+  const alignment = props.editorState.getCurrentContent().getBlockForKey(props.editorState.getSelection().getFocusKey()).getData().get('alignment');
   return (<div className="focus-editor-controls-container">
     {/* 居左对齐 */}
     <ToolbarButton
       label={<i className="fa fa-align-left" />}
       onClick={() => toggleAlignment('left')}
-      active={props.editorState.getCurrentContent().getFirstBlock().getData().get('alignment') === 'left'}
+      active={alignment === 'left'}
       tooltip="居左对齐"
     />
     {/* 居中对齐 */}
     <ToolbarButton
       label={<i className="fa fa-align-center" />}
       onClick={() => toggleAlignment('center')}
-      active={props.editorState.getCurrentContent().getFirstBlock().getData().get('alignment') === 'center'}
+      active={alignment === 'center'}
       tooltip="居中对齐"
     />
     {/* 居右对齐 */}
     <ToolbarButton
       label={<i className="fa fa-align-right" />}
       onClick={() => toggleAlignment('right')}
-      active={props.editorState.getCurrentContent().getFirstBlock().getData().get('alignment') === 'right'}
+      active={alignment === 'right'}
       tooltip="居右对齐"
     />
     {/* 两端对齐 */}
     <ToolbarButton
       label={<i className="fa fa-align-justify" />}
       onClick={() => toggleAlignment('justify')}
-      active={props.editorState.getCurrentContent().getFirstBlock().getData().get('alignment') === 'justify'}
+      active={alignment === 'justify'}
       tooltip="两端对齐"
     />
   </div>);

@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { EditorState } from 'draft-js';
-import ToolbarButton from './ToolbarButton';
 import InsertAudio from './media/InsertAudio';
+import InsertImage from './media/InsertImage';
+import InsertVideo from './media/InsertVideo';
+import InsertFlash from './media/InsertFlash';
 
 const MediaControls = (props) => {
   return (<div className="focus-editor-controls-container">
@@ -11,18 +13,19 @@ const MediaControls = (props) => {
       onChange={props.onChange}
       onUpload={props.onAudioUpload}
     />
-    <ToolbarButton
-      label={<i className="fa fa-image" />}
-      onClick={() => {
-        console.log(props.editorState, props.onChange);
-      }}
-      tooltip="插入图片"
+    <InsertImage
+      editorState={props.editorState}
+      onChange={props.onChange}
+      onUpload={props.onImageUpload}
     />
-    <ToolbarButton
-      label={<i className="fa fa-video-camera" />}
-      onClick={() => {
-      }}
-      tooltip="插入视频"
+    <InsertVideo
+      editorState={props.editorState}
+      onChange={props.onChange}
+      onUpload={props.onVideoUpload}
+    />
+    <InsertFlash
+      editorState={props.editorState}
+      onChange={props.onChange}
     />
   </div>);
 };
@@ -30,9 +33,15 @@ MediaControls.propTypes = {
   editorState: PropTypes.instanceOf(EditorState).isRequired,
   onChange: PropTypes.func.isRequired,
   onAudioUpload: PropTypes.func,
+  onImageUpload: PropTypes.func,
+  onVideoUpload: PropTypes.func,
 };
 MediaControls.defaultProps = {
   onAudioUpload: () => {
+  },
+  onImageUpload: () => {
+  },
+  onVideoUpload: () => {
   },
 };
 export default MediaControls;
