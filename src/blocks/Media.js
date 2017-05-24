@@ -5,18 +5,55 @@ import Video from './Video';
 import Flash from './Flash';
 
 const Media = (props) => {
-  const entity = props.contentState.getEntity(props.block.getEntityAt(0));
-  switch (entity.getType()) {
-    case 'audio':
-      return <Audio {...entity.getData()} />;
-    case 'image':
-      return <Image {...entity.getData()} />;
-    case 'video':
-      return <Video {...entity.getData()} />;
-    case 'flash':
-      return <Flash {...entity.getData()} />;
-    default:
-      return null;
+  const entityKey = props.block.getEntityAt(0);
+  if (entityKey) {
+    const entity = props.contentState.getEntity(entityKey);
+    switch (entity.getType()) {
+      case 'audio':
+        return (<Audio
+          {...entity.getData()}
+          onRemove={() => {
+            props.blockProps.onRemove(props.block.key);
+          }}
+          onEdit={() => {
+            props.blockProps.onAudioEdit(props.block.key);
+          }}
+        />);
+      case 'image':
+        return (<Image
+          {...entity.getData()}
+          onRemove={() => {
+            props.blockProps.onRemove(props.block.key);
+          }}
+          onEdit={() => {
+            props.blockProps.onImageEdit(props.block.key);
+          }}
+        />);
+      case 'video':
+        return (<Video
+          {...entity.getData()}
+          onRemove={() => {
+            props.blockProps.onRemove(props.block.key);
+          }}
+          onEdit={() => {
+            props.blockProps.onVideoEdit(props.block.key);
+          }}
+        />);
+      case 'flash':
+        return (<Flash
+          {...entity.getData()}
+          onRemove={() => {
+            props.blockProps.onRemove(props.block.key);
+          }}
+          onEdit={() => {
+            props.blockProps.onFlashEdit(props.block.key);
+          }}
+        />);
+      default:
+        return <div />;
+    }
+  } else {
+    return <div />;
   }
 };
 export default Media;

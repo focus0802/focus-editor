@@ -7,11 +7,10 @@
   width: 210px;
   left: 50%;
   margin-left: -105px;
-  .focus-color-picker-header {
-    color: #999999;
-  }
 }
-
+.focus-color-picker .focus-color-picker-header {
+  color: #999999;
+}
 .focus-color-picker:before {
   background: #ffffff;
   content: " ";
@@ -26,27 +25,23 @@
   border-bottom: 0;
   transform: rotate(-45deg);
 }
-
 .focus-color-picker-list {
   display: flex;
   flex-flow: wrap;
-  .focus-color-picker-list-item {
-    cursor: pointer;
-    border: 1px solid #f3f3f3;
-    width: 24px;
-    height: 24px;
-  }
 }
-
-.focus-color-picker-custom {
-  .ant-input {
-    font-size: 14px;
-  }
-  .focus-color-picker-custom-color {
-    border: 1px solid rgb(217, 217, 217);
-    border-radius: 4px 0 0 4px;
-    border-right: none;
-    width: 28px;
-    height: 28px;
-  }
+.focus-color-picker-list .focus-color-picker-list-item {
+  cursor: pointer;
+  border: 1px solid #f3f3f3;
+  width: 24px;
+  height: 24px;
+}
+.focus-color-picker-custom .ant-input {
+  font-size: 14px;
+}
+.focus-color-picker-custom .focus-color-picker-custom-color {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+  width: 28px;
+  height: 28px;
 }

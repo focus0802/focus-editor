@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { EditorState, RichUtils } from 'draft-js';
+import { EditorState, RichUtils, Modifier } from 'draft-js';
 import { Select } from 'antd';
 
 const FontSizePicker = (props) => {
@@ -16,13 +16,24 @@ const FontSizePicker = (props) => {
       style={{ width: 80, margin: '0 4px' }}
       optionLabelProp="value"
       value={current}
+      allowClear
       onChange={(value) => {
-        const selection = props.editorState.getSelection();
-        if (!selection.isCollapsed()) {
-          props.onChange(
-            RichUtils.toggleInlineStyle(props.editorState, `fontSize_${value}`),
-          );
+        const { editorState } = props;
+        const selection = editorState.getSelection();
+        const nextContentState = props.fontSizes.reduce((contentState, fontSize) => {
+          return Modifier.removeInlineStyle(contentState, selection, `fontSize_${fontSize.value}`);
+        }, editorState.getCurrentContent());
+        let nextEditorState = EditorState.push(editorState, nextContentState, 'change-inline-style');
+        const currentStyle = editorState.getCurrentInlineStyle();
+        if (selection.isCollapsed()) {
+          nextEditorState = currentStyle.reduce((state, fontSize) => {
+            return RichUtils.toggleInlineStyle(state, `fontSize_${fontSize}`);
+          }, nextEditorState);
         }
+        if (value && !currentStyle.has(`fontSize_${value}`)) {
+          nextEditorState = RichUtils.toggleInlineStyle(nextEditorState, `fontSize_${value}`);
+        }
+        props.onChange(nextEditorState);
       }}
     >
       {props.fontSizes.map((item) => {

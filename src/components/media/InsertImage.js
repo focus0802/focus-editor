@@ -24,10 +24,42 @@ class InsertImage extends React.Component {
       ratio: 1,
     };
     this.closeModal = this.closeModal.bind(this);
+    this.newImage = this.newImage.bind(this);
+    this.editImage = this.editImage.bind(this);
   }
 
   closeModal() {
-    this.setState({ modalVisible: false });
+    this.setState({
+      modalVisible: false,
+      image: undefined,
+      ratio: 1,
+      entityKey: undefined,
+      data: undefined,
+    });
+    this.props.form.resetFields();
+  }
+
+  editImage(entityKey, data) {
+    this.setState({
+      modalVisible: true,
+      ratio: (data.width / data.height) || 1,
+      image: data.src,
+      entityKey,
+      data,
+    });
+  }
+
+  newImage(url) {
+    const image = new Image();
+    image.src = url;
+    image.onload = () => {
+      this.props.form.setFields({
+        width: { value: image.width },
+        height: { value: image.height },
+        fixed_ratio: { value: true },
+      });
+      this.setState({ ratio: image.width / image.height });
+    };
   }
 
   render() {
@@ -56,19 +88,32 @@ class InsertImage extends React.Component {
             if (!err) {
               const { editorState } = this.props;
               const contentState = editorState.getCurrentContent();
-              const contentStateWithEntity = contentState.createEntity(
-                'image',
-                'IMMUTABLE',
-                { src: values.src, alt: values.alt, width: values.width, height: values.height },
-              );
-              const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
-              const newEditorState = EditorState.set(
-                editorState,
-                { currentContent: contentStateWithEntity },
-              );
-              this.props.onChange(
-                AtomicBlockUtils.insertAtomicBlock(newEditorState, entityKey, ' '),
-              );
+              if (this.state.entityKey) {
+                const newContentState = contentState.replaceEntityData(
+                  this.state.entityKey,
+                  values,
+                );
+                const newEditorState = EditorState.set(
+                  editorState,
+                  { currentContent: newContentState },
+                );
+                this.props.onChange(newEditorState);
+                this.props.editor.focus();
+              } else {
+                const contentStateWithEntity = contentState.createEntity(
+                  'image',
+                  'IMMUTABLE',
+                  values,
+                );
+                const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
+                const newEditorState = EditorState.set(
+                  editorState,
+                  { currentContent: contentStateWithEntity },
+                );
+                this.props.onChange(
+                  AtomicBlockUtils.insertAtomicBlock(newEditorState, entityKey, ' '),
+                );
+              }
               this.closeModal();
             }
           });
@@ -78,16 +123,7 @@ class InsertImage extends React.Component {
           accept="image/*"
           beforeUpload={(file, fileList) => {
             const callback = (url) => {
-              const image = new Image();
-              image.src = url;
-              image.onload = () => {
-                this.props.form.setFields({
-                  width: { value: image.width },
-                  height: { value: image.height },
-                  fixed_ratio: { value: true },
-                });
-                this.setState({ ratio: image.width / image.height });
-              };
+              this.newImage(url);
               this.props.form.setFields({ src: { value: url } });
               this.setState({ image: url });
             };
@@ -95,7 +131,7 @@ class InsertImage extends React.Component {
             return false;
           }}
         >
-          {this.state.image || this.props.currentImage ?
+          {this.state.image ?
             <div
               style={{
                 display: 'flex',
@@ -107,7 +143,7 @@ class InsertImage extends React.Component {
               }}
             >
               <img
-                src={this.state.image || this.props.currentImage.src}
+                src={this.state.image}
                 style={{
                   display: 'block',
                   maxHeight: 400,
@@ -119,7 +155,16 @@ class InsertImage extends React.Component {
               />
             </div>
             :
-            <div style={{ margin: 16 }}>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100%',
+                height: 400,
+              }}
+            >
               <p style={{ fontSize: 48, textAlign: 'center', color: '#108ee9' }}>
                 <Icon type="cloud-upload-o" />
               </p>
@@ -140,10 +185,12 @@ class InsertImage extends React.Component {
                   message: '图片地址不能为空',
                 },
               ],
+              initialValue: this.state.data && this.state.data.src,
             })(
               <Input
                 placeholder="请输入图片地址"
                 onBlur={(e) => {
+                  this.newImage(e.target.value);
                   this.setState({ image: e.target.value });
                 }}
               />,
@@ -157,7 +204,9 @@ class InsertImage extends React.Component {
                 labelCol={{ span: 12 }}
                 wrapperCol={{ span: 12 }}
               >
-                {getFieldDecorator('width', {})(
+                {getFieldDecorator('width', {
+                  initialValue: this.state.data && this.state.data.width,
+                })(
                   <Input
                     placeholder="图片宽度"
                     onChange={(e) => {
@@ -190,7 +239,9 @@ class InsertImage extends React.Component {
                 labelCol={{ span: 12 }}
                 wrapperCol={{ span: 12 }}
               >
-                {getFieldDecorator('height', {})(
+                {getFieldDecorator('height', {
+                  initialValue: this.state.data && this.state.data.height,
+                })(
                   <Input
                     placeholder="图片高度"
                     onChange={(e) => {
@@ -218,7 +269,10 @@ class InsertImage extends React.Component {
             </Col>
             <Col span="8">
               <Form.Item wrapperCol={{ offset: 4 }}>
-                {getFieldDecorator('fixed_ratio', { valuePropName: 'checked', initialValue: true })(
+                {getFieldDecorator('fixed_ratio', {
+                  valuePropName: 'checked',
+                  initialValue: true,
+                })(
                   <Checkbox
                     onChange={(e) => {
                       if (e.target.checked) {
@@ -280,4 +334,4 @@ InsertImage.defaultProps = {
   onUpload: () => {
   },
 };
-export default Form.create()(InsertImage);
+export default Form.create({ withRef: true })(InsertImage);

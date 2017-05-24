@@ -26,7 +26,7 @@ const HeadingPicker = (props) => {
       type: 'unstyled',
     },
   ];
-  let current;
+  let current = 'unstyled';
   headings.forEach((item) => {
     if (props.editorState.getCurrentContent().getBlockForKey(
         props.editorState.getSelection().getFocusKey(),
@@ -40,9 +40,10 @@ const HeadingPicker = (props) => {
       style={{ width: 160, margin: '0 4px' }}
       optionLabelProp="title"
       value={current}
+      allowClear
       onChange={(value) => {
         props.onChange(
-          RichUtils.toggleBlockType(props.editorState, value),
+          RichUtils.toggleBlockType(props.editorState, value || 'unstyled'),
         );
       }}
     >

@@ -1,11 +1,14 @@
 import React from 'react';
+import { Tooltip } from 'antd';
 
 const Link = (props) => {
-  const { href } = props.contentState.getEntity(props.entityKey).getData();
+  const { href, target } = props.contentState.getEntity(props.entityKey).getData();
   return (
-    <a href={href}>
-      {props.children}
-    </a>
+    <Tooltip overlay={href}>
+      <a href={href} target={target}>
+        {props.children}
+      </a>
+    </Tooltip>
   );
 };
 export default Link;

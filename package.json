@@ -1,11 +1,11 @@
 {
   "name": "focus-editor",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "antd": "^2.10.1",
     "class-names": "^1.0.0",
     "draft-js": "^0.10.1",
+    "draft-js-export-html": "^0.5.4",
     "font-awesome": "^4.7.0",
     "prop-types": "latest",
     "react": "^15.5.4",
@@ -57,7 +57,12 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "babel": "babel src --out-dir lib --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/everstream/focus-editor.git"
   },
   "jest": {
     "collectCoverageFrom": [

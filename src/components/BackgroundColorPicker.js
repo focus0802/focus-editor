@@ -4,7 +4,7 @@ import { EditorState, Modifier, RichUtils } from 'draft-js';
 import ToolbarButton from './ToolbarButton';
 import ColorPicker from './color-picker/ColorPicker';
 
-class TextColorPicker extends React.Component {
+class BackgroundColorPicker extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,8 +23,8 @@ class TextColorPicker extends React.Component {
   render() {
     return (<div className="focus-editor-controls-container">
       <ToolbarButton
-        label={<i className="fa fa-font" />}
-        tooltip="文字颜色"
+        label={<i className="fa fa-square" />}
+        tooltip="背景颜色"
         onClick={(e) => {
           e.nativeEvent.stopImmediatePropagation();
           this.setState({ pickerVisible: !this.state.pickerVisible });
@@ -42,17 +42,17 @@ class TextColorPicker extends React.Component {
             const { editorState } = this.props;
             const selection = editorState.getSelection();
             const nextContentState = this.props.colors.reduce((contentState, color) => {
-              return Modifier.removeInlineStyle(contentState, selection, `color_${color}`);
+              return Modifier.removeInlineStyle(contentState, selection, `backgroundColor_${color}`);
             }, editorState.getCurrentContent());
             let nextEditorState = EditorState.push(editorState, nextContentState, 'change-inline-style');
             const currentStyle = editorState.getCurrentInlineStyle();
             if (selection.isCollapsed()) {
               nextEditorState = currentStyle.reduce((state, color) => {
-                return RichUtils.toggleInlineStyle(state, `color_${color}`);
+                return RichUtils.toggleInlineStyle(state, `backgroundColor_${color}`);
               }, nextEditorState);
             }
-            if (value && !currentStyle.has(`color_${value}`)) {
-              nextEditorState = RichUtils.toggleInlineStyle(nextEditorState, `color_${value}`);
+            if (value && !currentStyle.has(`backgroundColor_${value}`)) {
+              nextEditorState = RichUtils.toggleInlineStyle(nextEditorState, `backgroundColor_${value}`);
             }
             this.props.onChange(nextEditorState);
             this.setState({ pickerVisible: false });
@@ -62,9 +62,9 @@ class TextColorPicker extends React.Component {
     </div>);
   }
 }
-TextColorPicker.propTypes = {
+BackgroundColorPicker.propTypes = {
   editorState: PropTypes.instanceOf(EditorState).isRequired,
   onChange: PropTypes.func.isRequired,
   colors: PropTypes.array.isRequired,
 };
-export default TextColorPicker;
+export default BackgroundColorPicker;

@@ -13,10 +13,16 @@ class InsertAudio extends React.Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
+  editAudio(entityKey, data) {
+    this.setState({ modalVisible: true, audio: data.src, entityKey, data });
+  }
+
   closeModal() {
     this.setState({
       modalVisible: false,
       audio: undefined,
+      entityKey: undefined,
+      data: undefined,
     });
     this.props.form.resetFields();
   }
@@ -78,10 +84,10 @@ class InsertAudio extends React.Component {
             return false;
           }}
         >
-          {this.state.audio || this.props.currentAudio ?
+          {this.state.audio ?
             <audio
               controls
-              src={this.state.audio || this.props.currentAudio.src}
+              src={this.state.audio}
               style={{ display: 'block', minHeight: 122, maxHeight: 400, maxWidth: '100%', margin: '0 auto' }}
             >
               <track kind="captions" />
@@ -108,6 +114,7 @@ class InsertAudio extends React.Component {
                   message: '音频地址不能为空',
                 },
               ],
+              initialValue: this.state.data && this.state.data.src,
             })(
               <Input
                 placeholder="请输入音频地址"
@@ -126,4 +133,4 @@ InsertAudio.propTypes = {
   editorState: PropTypes.instanceOf(EditorState).isRequired,
   onChange: PropTypes.func.isRequired,
 };
-export default Form.create()(InsertAudio);
+export default Form.create({ withRef: true })(InsertAudio);
