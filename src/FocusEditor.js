@@ -138,14 +138,14 @@ class FocusEditor extends React.Component {
         }
         if (entity.type === 'VIDEO') {
           return (<figure>
-            <video src={entity.data.src} autoPlay={entity.data.autoPlay}>
+            <video src={entity.data.src} autoPlay={entity.data.autoPlay} style={entity.data.style}>
               <track kind="captions" />
             </video>
           </figure>);
         }
         if (entity.type === 'AUDIO') {
           return (<figure>
-            <audio src={entity.data.src} autoPlay={entity.data.autoPlay}>
+            <audio src={entity.data.src} autoPlay={entity.data.autoPlay} style={entity.data.style}>
               <track kind="captions" />
             </audio>
           </figure>);

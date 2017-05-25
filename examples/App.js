@@ -12,8 +12,9 @@ class App extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({
-        value: `<figure><img width="100%"
-src="https://img.96tyw.com/uploads/20170519/14951630307597.jpg" /></figure>`,
+        value: `<figure>
+<video src="https://img.96tyw.com/uploads/editor/20170213/14869761981840.mp4" style="width:100%;">
+</figure>`,
       });
     }, 1000);
   }
