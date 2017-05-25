@@ -5,34 +5,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/App.js" afterPath="$PROJECT_DIR$/examples/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/FocusEditor.js" afterPath="$PROJECT_DIR$/lib/FocusEditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/blocks/Flash.js" afterPath="$PROJECT_DIR$/lib/blocks/Flash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/blocks/Image.js" afterPath="$PROJECT_DIR$/lib/blocks/Image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/blocks/Media.js" afterPath="$PROJECT_DIR$/lib/blocks/Media.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/blocks/Video.js" afterPath="$PROJECT_DIR$/lib/blocks/Video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/components/BackgroundColorPicker.js" afterPath="$PROJECT_DIR$/lib/components/BackgroundColorPicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/components/FontSizePicker.js" afterPath="$PROJECT_DIR$/lib/components/FontSizePicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/components/TextColorPicker.js" afterPath="$PROJECT_DIR$/lib/components/TextColorPicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/components/media/InsertAudio.js" afterPath="$PROJECT_DIR$/lib/components/media/InsertAudio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/components/media/InsertFlash.js" afterPath="$PROJECT_DIR$/lib/components/media/InsertFlash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/components/media/InsertImage.js" afterPath="$PROJECT_DIR$/lib/components/media/InsertImage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/components/media/InsertVideo.js" afterPath="$PROJECT_DIR$/lib/components/media/InsertVideo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/focus-editor.css" afterPath="$PROJECT_DIR$/lib/focus-editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/focus-editor.less" afterPath="$PROJECT_DIR$/lib/focus-editor.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FocusEditor.js" afterPath="$PROJECT_DIR$/src/FocusEditor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocks/Flash.js" afterPath="$PROJECT_DIR$/src/blocks/Flash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocks/Image.js" afterPath="$PROJECT_DIR$/src/blocks/Image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocks/Media.js" afterPath="$PROJECT_DIR$/src/blocks/Media.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocks/Video.js" afterPath="$PROJECT_DIR$/src/blocks/Video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/BackgroundColorPicker.js" afterPath="$PROJECT_DIR$/src/components/BackgroundColorPicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/FontSizePicker.js" afterPath="$PROJECT_DIR$/src/components/FontSizePicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TextColorPicker.js" afterPath="$PROJECT_DIR$/src/components/TextColorPicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/media/InsertAudio.js" afterPath="$PROJECT_DIR$/src/components/media/InsertAudio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/media/InsertFlash.js" afterPath="$PROJECT_DIR$/src/components/media/InsertFlash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/media/InsertImage.js" afterPath="$PROJECT_DIR$/src/components/media/InsertImage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/media/InsertVideo.js" afterPath="$PROJECT_DIR$/src/components/media/InsertVideo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/focus-editor.css" afterPath="$PROJECT_DIR$/src/focus-editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/focus-editor.less" afterPath="$PROJECT_DIR$/src/focus-editor.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,38 +21,36 @@
       <file leaf-file-name="FocusEditor.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FocusEditor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="462" column="3" lean-forward="true" selection-start-line="462" selection-start-column="3" selection-end-line="462" selection-end-column="3" />
+            <state relative-caret-position="518">
+              <caret line="78" column="26" lean-forward="true" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="n#!!block;n#fromHTML#0;n#FocusEditor#0" expanded="false" />
-                <element signature="n#!!block;n#toHTML#0;n#FocusEditor#0" expanded="false" />
-                <element signature="e#5630#6528#0" expanded="false" />
-                <element signature="e#6548#7401#0" expanded="false" />
-                <element signature="e#7428#7497#0" expanded="false" />
-                <element signature="e#7536#7661#0" expanded="false" />
-                <element signature="e#7698#7925#0" expanded="false" />
-                <element signature="e#7965#8090#0" expanded="false" />
-                <element signature="e#8118#8197#0" expanded="false" />
-                <element signature="e#8235#8929#0" expanded="false" />
-                <element signature="e#8973#9115#0" expanded="false" />
-                <marker date="1495697791000" expanded="true" signature="11957:11985" ph="..." />
-                <marker date="1495697791000" expanded="false" signature="12100:14938" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="12147:14923" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="12207:12514" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="12235:12290" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="12542:12640" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="12666:12764" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="12791:12928" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="12960:13058" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="13086:13217" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="13251:13382" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="13412:13510" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="13535:13633" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="13658:13756" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="14950:15012" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="15084:15107" ph="..." />
-                <marker date="1495697791000" expanded="true" signature="15767:15815" ph="{...}" />
+                <element signature="e#5719#6617#0" expanded="false" />
+                <element signature="e#6637#7490#0" expanded="false" />
+                <element signature="e#7517#7586#0" expanded="false" />
+                <element signature="e#7625#7750#0" expanded="false" />
+                <element signature="e#7787#8014#0" expanded="false" />
+                <element signature="e#8247#8326#0" expanded="false" />
+                <element signature="e#8364#9058#0" expanded="false" />
+                <element signature="e#9102#9244#0" expanded="false" />
+                <element signature="e#9291#11996#0" expanded="false" />
+                <marker date="1495706292000" expanded="true" signature="12449:12477" ph="..." />
+                <marker date="1495706292000" expanded="false" signature="12592:15430" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="12639:15415" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="12699:13006" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="12727:12782" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="13034:13132" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="13158:13256" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="13283:13420" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="13452:13550" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="13578:13709" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="13743:13874" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="13904:14002" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="14027:14125" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="14150:14248" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="15442:15504" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="15576:15599" ph="..." />
+                <marker date="1495706292000" expanded="true" signature="16259:16307" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -87,7 +59,7 @@
       <file leaf-file-name="InsertImage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/media/InsertImage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="-93">
               <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
               <folding />
             </state>
@@ -117,124 +89,27 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1495697331000" expanded="true" signature="781:826" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="828:834" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="834:840" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="840:846" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="846:852" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="1090:1107" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="1199:1224" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="1248:1265" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="1280:1325" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="1348:1403" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="1426:1455" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="1521:1566" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="1682:1688" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="1712:1798" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="1851:1896" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="1955:1962" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="1969:1976" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="2004:2011" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="2014:2022" ph="·" />
-                <marker date="1495697331000" expanded="true" signature="2025:2032" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="2087:2132" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="2134:2140" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="2173:2259" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="2307:2352" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="2418:2425" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="2437:2444" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="2534:2579" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="2631:2638" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="2652:2659" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="2683:2690" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="2694:2701" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="2803:2810" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="2814:2821" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="2849:2866" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="2958:2967" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="2997:3042" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="3044:3050" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3051:3057" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3058:3064" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3065:3071" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3072:3078" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3079:3085" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3086:3092" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3093:3099" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3100:3106" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3107:3113" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3114:3120" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3121:3127" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3128:3134" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3135:3141" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3142:3148" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3149:3155" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3156:3162" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3163:3169" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3170:3176" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3177:3183" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3184:3190" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3191:3197" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3198:3204" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3205:3211" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3212:3218" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3219:3225" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3226:3232" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3233:3239" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3240:3246" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3247:3253" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3254:3260" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3261:3267" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3268:3274" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3275:3281" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3282:3288" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3289:3295" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3296:3302" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3303:3309" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3310:3316" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3317:3323" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3324:3330" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3331:3337" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3338:3344" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3345:3351" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3352:3358" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3372:3386" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="3388:3394" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3394:3400" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3413:3426" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="3428:3434" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3469:3524" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="3547:3576" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="3635:3680" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="3813:3819" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="3845:3931" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="3983:4028" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="4106:4112" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="4138:4183" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="4204:4211" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="4215:4222" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="4232:4239" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="4245:4252" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="4307:4314" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="4318:4325" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="4378:4385" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="4391:4398" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="4440:4446" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="4470:4515" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="4559:4566" ph="“" />
-                <marker date="1495697331000" expanded="true" signature="4570:4577" ph="”" />
-                <marker date="1495697331000" expanded="true" signature="4597:4603" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="4619:4636" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="4651:4711" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="4762:4779" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="4871:4896" ph="..." />
-                <marker date="1495697331000" expanded="true" signature="4909:4915" ph=" " />
-                <marker date="1495697331000" expanded="true" signature="4962:5666" ph="..." />
+                <marker date="1495706186000" expanded="true" signature="336:391" ph="..." />
+                <marker date="1495706186000" expanded="true" signature="494:515" ph="..." />
+                <marker date="1495706186000" expanded="true" signature="745:1800" ph="..." />
+                <marker date="1495706186000" expanded="true" signature="1075:1779" ph="..." />
+                <marker date="1495706186000" expanded="true" signature="1075:1788" ph="..." />
+                <marker date="1495706186000" expanded="true" signature="1820:1904" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -253,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>splitReactElement</find>
       <find>splitReactElement2</find>
       <find>splitReactElement2.de</find>
       <find>splitReactElement2.defa</find>
@@ -266,7 +140,6 @@
       <find>endsWi</find>
       <find>w &amp;</find>
       <find>editor=</find>
-      <find>console.log</find>
       <find>splitReactElement2.default</find>
       <find>t</find>
       <find>this,</find>
@@ -283,6 +156,8 @@
       <find>this.edit</find>
       <find>this.edito</find>
       <find>this.editor</find>
+      <find>console.log</find>
+      <find>onChange</find>
     </findStrings>
     <replaceStrings>
       <replace>Button</replace>
@@ -342,10 +217,10 @@
         <option value="$PROJECT_DIR$/src/components/media/InsertVideo.js" />
         <option value="$PROJECT_DIR$/src/blocks/Media.js" />
         <option value="$PROJECT_DIR$/src/components/media/InsertFlash.js" />
-        <option value="$PROJECT_DIR$/examples/App.js" />
         <option value="$PROJECT_DIR$/src/components/media/InsertImage.js" />
-        <option value="$PROJECT_DIR$/src/FocusEditor.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/examples/App.js" />
+        <option value="$PROJECT_DIR$/src/FocusEditor.js" />
       </list>
     </option>
   </component>
@@ -470,7 +345,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="InsertIma&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Image&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Flash&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertV&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Video&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Video.js&#10;InsertVideo&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Me&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;Media&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;FLASH&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertAudi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;Insert&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;me&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;Link&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/decorators/Link.js&#10;IM&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Image.js&#10;convertTOHTML&#9;null&#9;null&#10;pack&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/package.json&#10;focus&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;InsertImage&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Align&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/lib/components/AlignmentControls.js&#10;Font&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/FontSizePicker.js&#10;focus-edit&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;BackgroundColor&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/BackgroundColorPicker.js&#10;Text&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;focus-ed&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;Head&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;Audio&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;InsertVide&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Ins&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;insertFlash&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertA&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;InserIm&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Inser&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;InserVi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Back&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/BackgroundColorPicker.js&#10;InsertLink&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InsertLink.js&#10;ColorPicker&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;FontSize&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/FontSizePicker.js&#10;Headi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;color-picker.less&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/color-picker/color-picker.less&#10;Tec&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;Color&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/color-picker/ColorPicker.js&#10;Inline&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InlineStyleControls.js&#10;HeadingP&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;MediaContro&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/MediaControls.js&#10;App&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/examples/App.js&#10;Draft.css&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/node_modules/draft-js/dist/Draft.css&#10;Alignment&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/AlignmentControls.js&#10;focus-e&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;InlineS&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InlineStyleControls.js&#10;Select&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Input.&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/node_modules/antd/lib/input/Input.d.ts&#10;InsertIma&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Image&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Flash&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertV&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Video&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Video.js&#10;InsertVideo&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Me&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;Media&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;FLASH&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertAudi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;Insert&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;me&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;Link&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/decorators/Link.js&#10;IM&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Image.js&#10;convertTOHTML&#9;null&#9;null&#10;pack&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/package.json&#10;focus&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;InsertImage&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Align&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/lib/components/AlignmentControls.js&#10;Font&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/FontSizePicker.js&#10;focus-edit&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;BackgroundColor&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/BackgroundColorPicker.js&#10;Text&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;focus-ed&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;Head&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;Audio&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;InsertVide&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Ins&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;insertFlash&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertA&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;InserIm&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Inser&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;InserVi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Back&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/BackgroundColorPicker.js&#10;InsertLink&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InsertLink.js&#10;ColorPicker&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;FontSize&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/FontSizePicker.js&#10;Headi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;color-picker.less&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/color-picker/color-picker.less&#10;Tec&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;Color&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/color-picker/ColorPicker.js&#10;Inline&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InlineStyleControls.js&#10;HeadingP&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;MediaContro&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/MediaControls.js&#10;App&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/examples/App.js&#10;Draft.css&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/node_modules/draft-js/dist/Draft.css&#10;Alignment&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/AlignmentControls.js&#10;focus-e&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;InlineS&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InlineStyleControls.js" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -648,7 +523,7 @@
       <workItem from="1495363700612" duration="5008000" />
       <workItem from="1495499667320" duration="25219000" />
       <workItem from="1495585202804" duration="26124000" />
-      <workItem from="1495671576449" duration="23910000" />
+      <workItem from="1495671576449" duration="32268000" />
     </task>
     <task id="LOCAL-00001" summary="常规更新">
       <created>1495620504625</created>
@@ -664,26 +539,34 @@
       <option name="project" value="LOCAL" />
       <updated>1495620754317</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="常规更新">
+      <created>1495698152850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495698152850</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148144000" />
+    <option name="totallyTimeSpent" value="156502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1278" y="23" width="1280" height="1341" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1898223" sideWeight="0.83025026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30994153" sideWeight="0.502442" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2792157" sideWeight="0.5056543" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1898223" sideWeight="0.16974972" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2792157" sideWeight="0.497558" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2792157" sideWeight="0.49434572" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30980393" sideWeight="0.497558" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1898223" sideWeight="0.83025026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -691,7 +574,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -713,13 +595,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/ListControls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/focus-editor.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1049,14 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/Media.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/media/InsertVideo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1073,133 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/App.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/input/Input.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1495697331000" expanded="true" signature="781:826" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="828:834" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="834:840" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="840:846" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="846:852" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="1090:1107" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="1199:1224" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="1248:1265" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="1280:1325" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="1348:1403" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="1426:1455" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="1521:1566" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="1682:1688" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="1712:1798" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="1851:1896" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="1955:1962" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="1969:1976" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="2004:2011" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="2014:2022" ph="·" />
-            <marker date="1495697331000" expanded="true" signature="2025:2032" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="2087:2132" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="2134:2140" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="2173:2259" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="2307:2352" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="2418:2425" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="2437:2444" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="2534:2579" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="2631:2638" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="2652:2659" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="2683:2690" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="2694:2701" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="2803:2810" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="2814:2821" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="2849:2866" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="2958:2967" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="2997:3042" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="3044:3050" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3051:3057" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3058:3064" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3065:3071" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3072:3078" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3079:3085" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3086:3092" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3093:3099" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3100:3106" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3107:3113" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3114:3120" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3121:3127" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3128:3134" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3135:3141" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3142:3148" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3149:3155" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3156:3162" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3163:3169" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3170:3176" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3177:3183" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3184:3190" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3191:3197" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3198:3204" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3205:3211" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3212:3218" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3219:3225" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3226:3232" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3233:3239" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3240:3246" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3247:3253" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3254:3260" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3261:3267" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3268:3274" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3275:3281" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3282:3288" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3289:3295" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3296:3302" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3303:3309" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3310:3316" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3317:3323" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3324:3330" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3331:3337" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3338:3344" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3345:3351" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3352:3358" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3372:3386" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="3388:3394" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3394:3400" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3413:3426" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="3428:3434" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3469:3524" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="3547:3576" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="3635:3680" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="3813:3819" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="3845:3931" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="3983:4028" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="4106:4112" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="4138:4183" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="4204:4211" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="4215:4222" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="4232:4239" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="4245:4252" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="4307:4314" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="4318:4325" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="4378:4385" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="4391:4398" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="4440:4446" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="4470:4515" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="4559:4566" ph="“" />
-            <marker date="1495697331000" expanded="true" signature="4570:4577" ph="”" />
-            <marker date="1495697331000" expanded="true" signature="4597:4603" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="4619:4636" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="4651:4711" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="4762:4779" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="4871:4896" ph="..." />
-            <marker date="1495697331000" expanded="true" signature="4909:4915" ph=" " />
-            <marker date="1495697331000" expanded="true" signature="4962:5666" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/media/InsertImage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+        <state relative-caret-position="-349">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1212,40 +956,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FocusEditor.js">
+    <entry file="file://$PROJECT_DIR$/src/blocks/Media.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="462" column="3" lean-forward="true" selection-start-line="462" selection-start-column="3" selection-end-line="462" selection-end-column="3" />
+        <state relative-caret-position="513">
+          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/media/InsertImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93">
+          <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#fromHTML#0;n#FocusEditor#0" expanded="false" />
-            <element signature="n#!!block;n#toHTML#0;n#FocusEditor#0" expanded="false" />
-            <element signature="e#5630#6528#0" expanded="false" />
-            <element signature="e#6548#7401#0" expanded="false" />
-            <element signature="e#7428#7497#0" expanded="false" />
-            <element signature="e#7536#7661#0" expanded="false" />
-            <element signature="e#7698#7925#0" expanded="false" />
-            <element signature="e#7965#8090#0" expanded="false" />
-            <element signature="e#8118#8197#0" expanded="false" />
-            <element signature="e#8235#8929#0" expanded="false" />
-            <element signature="e#8973#9115#0" expanded="false" />
-            <marker date="1495697791000" expanded="true" signature="11957:11985" ph="..." />
-            <marker date="1495697791000" expanded="false" signature="12100:14938" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="12147:14923" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="12207:12514" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="12235:12290" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="12542:12640" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="12666:12764" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="12791:12928" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="12960:13058" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="13086:13217" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="13251:13382" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="13412:13510" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="13535:13633" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="13658:13756" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="14950:15012" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="15084:15107" ph="..." />
-            <marker date="1495697791000" expanded="true" signature="15767:15815" ph="{...}" />
+            <marker date="1495706186000" expanded="true" signature="336:391" ph="..." />
+            <marker date="1495706186000" expanded="true" signature="494:515" ph="..." />
+            <marker date="1495706186000" expanded="true" signature="745:1800" ph="..." />
+            <marker date="1495706186000" expanded="true" signature="1075:1779" ph="..." />
+            <marker date="1495706186000" expanded="true" signature="1075:1788" ph="..." />
+            <marker date="1495706186000" expanded="true" signature="1820:1904" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FocusEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="78" column="26" lean-forward="true" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#5719#6617#0" expanded="false" />
+            <element signature="e#6637#7490#0" expanded="false" />
+            <element signature="e#7517#7586#0" expanded="false" />
+            <element signature="e#7625#7750#0" expanded="false" />
+            <element signature="e#7787#8014#0" expanded="false" />
+            <element signature="e#8247#8326#0" expanded="false" />
+            <element signature="e#8364#9058#0" expanded="false" />
+            <element signature="e#9102#9244#0" expanded="false" />
+            <element signature="e#9291#11996#0" expanded="false" />
+            <marker date="1495706292000" expanded="true" signature="12449:12477" ph="..." />
+            <marker date="1495706292000" expanded="false" signature="12592:15430" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="12639:15415" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="12699:13006" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="12727:12782" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="13034:13132" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="13158:13256" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="13283:13420" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="13452:13550" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="13578:13709" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="13743:13874" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="13904:14002" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="14027:14125" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="14150:14248" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="15442:15504" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="15576:15599" ph="..." />
+            <marker date="1495706292000" expanded="true" signature="16259:16307" ph="{...}" />
           </folding>
         </state>
       </provider>

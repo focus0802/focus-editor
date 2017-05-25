@@ -1,6 +1,6 @@
 {
   "name": "focus-editor",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "dependencies": {
     "antd": "^2.10.1",
     "class-names": "^1.0.0",

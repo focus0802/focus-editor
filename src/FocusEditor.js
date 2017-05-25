@@ -96,7 +96,7 @@ class FocusEditor extends React.Component {
           data,
         };
       },
-    })(value || '');
+    })(value);
   }
 
   static toHTML(contentState) {
@@ -147,21 +147,22 @@ class FocusEditor extends React.Component {
         return originalText;
       },
     })(contentState);
-    console.log(html);
-    return html;
+    return html === '<p></p>' ? undefined : html;
   }
 
   constructor(props) {
     super(props);
-    const decorator = new CompositeDecorator([
+    this.initialized = false;
+    this.decorator = new CompositeDecorator([
       {
         strategy: findLinkEntities,
         component: Link,
       },
     ]);
     this.state = {
-      editorState: EditorState.createWithContent(FocusEditor.fromHTML(this.props.value), decorator),
-      initialized: false,
+      editorState: this.props.value
+        ? EditorState.createWithContent(FocusEditor.fromHTML(this.props.value), this.decorator)
+        : EditorState.createEmpty(this.decorator),
     };
     this.fontSizes = [
       {
@@ -237,7 +238,9 @@ class FocusEditor extends React.Component {
     });
     this.onChange = (editorState) => {
       this.setState({ editorState });
-      this.props.onChange(FocusEditor.toHTML(editorState.getCurrentContent()));
+      setTimeout(() => {
+        this.props.onChange(FocusEditor.toHTML(editorState.getCurrentContent()));
+      }, 0);
     };
     this.customStyleMap = {
       STRIKETHROUGH: {
@@ -343,7 +346,23 @@ class FocusEditor extends React.Component {
   }
 
   componentDidMount() {
-    this.editor.focus();
+    // this.editor.focus();
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (!this.initialized && newProps.value) {
+      this.setState({
+        editorState: EditorState.createWithContent(
+          FocusEditor.fromHTML(newProps.value),
+          this.decorator,
+        ),
+      });
+      this.initialized = true;
+    }
+  }
+
+  componentWillUnmount() {
+    this.initialized = false;
   }
 
   render() {
