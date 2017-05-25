@@ -12,10 +12,10 @@ class App extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({
-        value: `<img width="100%"
-src="\\a/uploads/editor/20170116/14845439272428.jpg" />`,
+        value: `<figure><img width="100%"
+src="https://img.96tyw.com/uploads/20170519/14951630307597.jpg" /></figure>`,
       });
-    }, 2000);
+    }, 1000);
   }
 
   render() {
