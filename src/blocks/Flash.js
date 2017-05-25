@@ -10,22 +10,11 @@ const Flash = (props) => {
         <a onClick={props.onRemove} style={{ color: '#fff' }}>删除</a>
       </div>}
     >
-      <object
-        width={props.width}
-        height={props.height}
-      >
-        <param
-          name="movie"
-          value={props.src}
-        />
-        <param name="quality" value="high" />
-        <embed
-          type="application/x-shockwave-flash"
-          src={props.src}
-          width={props.width}
-          height={props.height}
-        />
-      </object>
+      <embed
+        type="application/x-shockwave-flash"
+        src={props.src}
+        style={props.style}
+      />
     </Tooltip>
   );
 };

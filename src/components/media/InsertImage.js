@@ -91,7 +91,14 @@ class InsertImage extends React.Component {
               if (this.state.entityKey) {
                 const newContentState = contentState.replaceEntityData(
                   this.state.entityKey,
-                  values,
+                  {
+                    src: values.src,
+                    alt: values.alt,
+                    style: {
+                      width: values.width,
+                      height: values.height,
+                    },
+                  },
                 );
                 const newEditorState = EditorState.set(
                   editorState,
@@ -101,9 +108,16 @@ class InsertImage extends React.Component {
                 this.props.editor.focus();
               } else {
                 const contentStateWithEntity = contentState.createEntity(
-                  'image',
+                  'IMAGE',
                   'IMMUTABLE',
-                  values,
+                  {
+                    src: values.src,
+                    alt: values.alt,
+                    style: {
+                      width: values.width,
+                      height: values.height,
+                    },
+                  },
                 );
                 const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
                 const newEditorState = EditorState.set(
@@ -285,7 +299,7 @@ class InsertImage extends React.Component {
                             w = match[0];
                           }
                         }
-                        if (w && h.endsWith('%')) {
+                        if (h && h.endsWith('%')) {
                           const regexp = new RegExp(/^\d+(\.\d+)?/);
                           const match = regexp.exec(h);
                           if (match) {

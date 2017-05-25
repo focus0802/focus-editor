@@ -10,14 +10,19 @@ class TextColorPicker extends React.Component {
     this.state = {
       pickerVisible: false,
     };
-  }
-
-  componentDidMount() {
-    document.addEventListener('click', () => {
+    this.event = () => {
       this.setState({
         pickerVisible: false,
       });
-    });
+    };
+  }
+
+  componentDidMount() {
+    document.addEventListener('click', this.event);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('click', this.event);
   }
 
   render() {

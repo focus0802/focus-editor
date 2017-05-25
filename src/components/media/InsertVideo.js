@@ -6,7 +6,7 @@ import ToolbarButton from '../ToolbarButton';
 
 class InsertVideo extends React.Component {
   static getValue(value) {
-    let newValue = value.toString();
+    let newValue = (value || '').toString();
     if (newValue && newValue.endsWith('%')) {
       const regexp = new RegExp(/^\d+(\.\d+)?/);
       const match = regexp.exec(newValue);
@@ -71,7 +71,13 @@ class InsertVideo extends React.Component {
               if (this.state.entityKey) {
                 const newContentState = contentState.replaceEntityData(
                   this.state.entityKey,
-                  values,
+                  {
+                    src: values.src,
+                    style: {
+                      width: values.width,
+                      height: values.height,
+                    },
+                  },
                 );
                 const newEditorState = EditorState.set(
                   editorState,
@@ -81,9 +87,15 @@ class InsertVideo extends React.Component {
                 this.props.editor.focus();
               } else {
                 const contentStateWithEntity = contentState.createEntity(
-                  'video',
+                  'VIDEO',
                   'IMMUTABLE',
-                  values,
+                  {
+                    src: values.src,
+                    style: {
+                      width: values.width,
+                      height: values.height,
+                    },
+                  },
                 );
                 const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
                 const newEditorState = EditorState.set(

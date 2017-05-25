@@ -64,7 +64,13 @@ class InsertFlash extends React.Component {
               if (this.state.entityKey) {
                 const newContentState = contentState.replaceEntityData(
                   this.state.entityKey,
-                  values,
+                  {
+                    src: values.src,
+                    style: {
+                      width: values.width,
+                      height: values.height,
+                    },
+                  },
                 );
                 const newEditorState = EditorState.set(
                   editorState,
@@ -74,9 +80,15 @@ class InsertFlash extends React.Component {
                 this.props.editor.focus();
               } else {
                 const contentStateWithEntity = contentState.createEntity(
-                  'flash',
+                  'FLASH',
                   'IMMUTABLE',
-                  values,
+                  {
+                    src: values.src,
+                    style: {
+                      width: values.width,
+                      height: values.height,
+                    },
+                  },
                 );
                 const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
                 const newEditorState = EditorState.set(

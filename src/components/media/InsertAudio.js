@@ -52,7 +52,7 @@ class InsertAudio extends React.Component {
               const { editorState } = this.props;
               const contentState = editorState.getCurrentContent();
               const contentStateWithEntity = contentState.createEntity(
-                'audio',
+                'AUDIO',
                 'IMMUTABLE',
                 { src: values.src },
               );

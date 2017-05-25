@@ -5,12 +5,11 @@
   left: 0;
   right: 0;
   overflow: hidden;
-  .focus-editor-container {
-    overflow: scroll;
-  }
 }
 
 .focus-editor {
+  z-index: 9999;
+  background: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
   .focus-editor-toolbar {
@@ -22,6 +21,7 @@
     }
     .ant-select-selection {
       border: 1px solid #d9d9d9;
+      box-shadow: none;
     }
     .focus-editor-controls-container {
       display: inline-block;
@@ -81,6 +81,7 @@
   }
   .focus-editor-container {
     min-height: 100px;
+    max-height: 100%;
     overflow: scroll;
     padding: 4px;
     .align-left {

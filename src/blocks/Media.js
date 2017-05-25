@@ -9,7 +9,7 @@ const Media = (props) => {
   if (entityKey) {
     const entity = props.contentState.getEntity(entityKey);
     switch (entity.getType()) {
-      case 'audio':
+      case 'AUDIO':
         return (<Audio
           {...entity.getData()}
           onRemove={() => {
@@ -19,7 +19,7 @@ const Media = (props) => {
             props.blockProps.onAudioEdit(props.block.key);
           }}
         />);
-      case 'image':
+      case 'IMAGE':
         return (<Image
           {...entity.getData()}
           onRemove={() => {
@@ -29,7 +29,7 @@ const Media = (props) => {
             props.blockProps.onImageEdit(props.block.key);
           }}
         />);
-      case 'video':
+      case 'VIDEO':
         return (<Video
           {...entity.getData()}
           onRemove={() => {
@@ -39,7 +39,7 @@ const Media = (props) => {
             props.blockProps.onVideoEdit(props.block.key);
           }}
         />);
-      case 'flash':
+      case 'FLASH':
         return (<Flash
           {...entity.getData()}
           onRemove={() => {

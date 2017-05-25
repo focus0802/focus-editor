@@ -11,8 +11,7 @@ const Video = (props) => {
       </div>}
     >
       <video
-        width={props.width}
-        height={props.height}
+        style={props.style}
         src={props.src}
         controls
         autoPlay={!!props.autoPlay}

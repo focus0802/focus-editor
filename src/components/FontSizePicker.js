@@ -13,7 +13,7 @@ const FontSizePicker = (props) => {
   return (<div className="focus-editor-controls-container">
     <Select
       placeholder="字体大小"
-      style={{ width: 80, margin: '0 4px' }}
+      style={{ width: 90, margin: '0 4px' }}
       optionLabelProp="value"
       value={current}
       allowClear

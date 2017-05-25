@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'class-names';
 import { Affix } from 'antd';
-import { Editor, EditorState, SelectionState, Modifier, CompositeDecorator } from 'draft-js';
-import { stateToHTML } from 'draft-js-export-html';
+import { Editor, EditorState, Entity, SelectionState, Modifier, CompositeDecorator } from 'draft-js';
+import { convertFromHTML, convertToHTML } from 'draft-convert';
 import 'font-awesome/css/font-awesome.min.css';
 import './focus-editor.css';
 import InlineStyleControls from './components/InlineStyleControls';
@@ -24,6 +24,133 @@ import InsertVideo from './components/media/InsertVideo';
 import InsertFlash from './components/media/InsertFlash';
 
 class FocusEditor extends React.Component {
+  static fromHTML(value) {
+    return convertFromHTML({
+      htmlToStyle: (nodeName, node, currentStyle) => {
+        let style = currentStyle;
+        if (nodeName === 'span') {
+          if (node.style.color) {
+            style = style.add(`color_${node.style.color}`);
+          }
+          if (node.style.fontSize) {
+            style = style.add(`fontSize_${node.style.fontSize}`);
+          }
+          if (node.style.backgroundColor) {
+            style = style.add(`backgroundColor_${node.style.backgroundColor}`);
+          }
+        }
+        return style;
+      },
+      htmlToEntity: (nodeName, node) => {
+        if (nodeName === 'a') {
+          return Entity.create(
+            'LINK',
+            'MUTABLE',
+            { href: node.href, target: node.target },
+          );
+        }
+
+        if (nodeName === 'embed') {
+          return Entity.create(
+            'FLASH',
+            'IMMUTABLE',
+            {
+              src: node.src,
+              style: { width: node.style.width, height: node.style.height },
+            },
+          );
+        }
+        if (nodeName === 'img') {
+          return Entity.create('IMAGE', 'IMMUTABLE', {
+            src: node.src,
+            alt: node.alt,
+            style: { width: node.style.width, height: node.style.height },
+          });
+        }
+        if (nodeName === 'video') {
+          return Entity.create('VIDEO', 'IMMUTABLE', {
+            src: node.src,
+            autoPlay: node.autoplay,
+            style: { width: node.style.width, height: node.style.height },
+          });
+        }
+        if (nodeName === 'audio') {
+          return Entity.create('AUDIO', 'IMMUTABLE', {
+            src: node.src,
+            autoPlay: node.autoplay,
+          });
+        }
+      },
+      htmlToBlock: (nodeName, node) => {
+        const data = {};
+        if (node.style && node.style.textAlign) {
+          data.alignment = node.style.textAlign;
+        }
+        if (nodeName === 'img' || nodeName === 'video' || nodeName === 'audio' || nodeName === 'embed') {
+          return {
+            type: 'atomic',
+            data: { src: node.src, alt: node.alt, style: node.style },
+          };
+        }
+        return {
+          data,
+        };
+      },
+    })(value || '');
+  }
+
+  static toHTML(contentState) {
+    const html = convertToHTML({
+      styleToHTML: (style) => {
+        if (style.startsWith('fontSize_')) {
+          const fontSize = style.replace('fontSize_', '');
+          return <span style={{ fontSize }} />;
+        }
+        if (style.startsWith('color_')) {
+          const color = style.replace('color_', '');
+          return <span style={{ color }} />;
+        }
+        if (style.startsWith('backgroundColor_')) {
+          const backgroundColor = style.replace('backgroundColor_', '');
+          return <span style={{ backgroundColor }} />;
+        }
+        if (style === 'BOLD') {
+          return <b />;
+        }
+      },
+      blockToHTML: (block) => {
+        const textAlign = block.data.alignment;
+        if (block.type === 'unstyled') {
+          return <p style={{ textAlign }} />;
+        }
+        if (block.type === 'atomic') {
+          return {
+            start: '',
+            end: '',
+          };
+        }
+      },
+      entityToHTML: (entity, originalText) => {
+        if (entity.type === 'LINK') {
+          return <a href={entity.data.href} target={entity.data.target}>{originalText}</a>;
+        }
+        if (entity.type === 'FLASH') {
+          return (<figure>
+            <embed src={entity.data.src} type="application/x-shockwave-flash" style={entity.data.style} />
+          </figure>);
+        }
+        if (entity.type === 'IMAGE') {
+          return (<figure>
+            <img src={entity.data.src} alt={entity.data.alt} style={entity.data.style} />
+          </figure>);
+        }
+        return originalText;
+      },
+    })(contentState);
+    console.log(html);
+    return html;
+  }
+
   constructor(props) {
     super(props);
     const decorator = new CompositeDecorator([
@@ -33,7 +160,8 @@ class FocusEditor extends React.Component {
       },
     ]);
     this.state = {
-      editorState: EditorState.createEmpty(decorator),
+      editorState: EditorState.createWithContent(FocusEditor.fromHTML(this.props.value), decorator),
+      initialized: false,
     };
     this.fontSizes = [
       {
@@ -109,40 +237,7 @@ class FocusEditor extends React.Component {
     });
     this.onChange = (editorState) => {
       this.setState({ editorState });
-      const value = stateToHTML(editorState.getCurrentContent(), {
-        inlineStyles,
-        blockRenderers: {
-          atomic: (block) => {
-            const entityKey = block.getEntityAt(0);
-            if (entityKey) {
-              const entity = editorState.getCurrentContent().getEntity(entityKey);
-              const data = entity.getData();
-              switch (entity.type) {
-                case 'audio':
-                  return `<audio ${data.src ? `src="${data.src}"` : ''} controls ${data.autoPlay ? 'autoplay' : ''}/>`;
-                case 'image':
-                  return `<img ${data.width ? `width="${data.width}"` : ''} ${data.height ? `height="${data.height}"` : ''} ${data.src ? `src="${data.src}"` : ''} ${data.alt ? `alt="${data.alt}"` : ''}/>`;
-                case 'video':
-                  return `<video ${data.width ? `width="${data.width}"` : ''} ${data.height ? `height="${data.height}"` : ''} src="${data.src}" controls ${data.autoPlay ? 'autoplay' : ''}/>`;
-                case 'flash':
-                  return `<object ${data.width ? `width="${data.width}"` : ''} ${data.height ? `height="${data.height}"` : ''}><param name="movie" ${data.src ? `value="${data.src}"` : ''} /><embed ${data.src ? `src="${data.src}"` : ''} ${data.width ? `width="${data.width}"` : ''} ${data.height ? `height="${data.height}"` : ''} /></object>`;
-                default:
-                  break;
-              }
-            }
-          },
-        },
-        blockStyleFn: (block) => {
-          if (block.getData().get('alignment')) {
-            return {
-              style: {
-                textAlign: block.getData().get('alignment'),
-              },
-            };
-          }
-        },
-      });
-      this.props.onChange(value);
+      this.props.onChange(FocusEditor.toHTML(editorState.getCurrentContent()));
     };
     this.customStyleMap = {
       STRIKETHROUGH: {
@@ -245,6 +340,10 @@ class FocusEditor extends React.Component {
       }
       return null;
     };
+  }
+
+  componentDidMount() {
+    this.editor.focus();
   }
 
   render() {

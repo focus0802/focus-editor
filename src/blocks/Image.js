@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Tooltip } from 'antd';
 
 const Image = (props) => {
@@ -22,13 +22,13 @@ const Image = (props) => {
         >删除</a>
       </div>}
     >
-      <img src={props.src} alt={props.alt} width={props.width} height={props.height} />
+      <img src={props.src} alt={props.alt} style={props.style} />
     </Tooltip>
   );
 };
 Image.propTypes = {
-  // onEdit: PropTypes.func.isRequired,
-  // onRemove: PropTypes.func.isRequired,
+  onEdit: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired,
 };
 Image.defaultProps = {
   onEdit: () => {
