@@ -12,6 +12,9 @@ const Media = (props) => {
       case 'AUDIO':
         return (<Audio
           {...entity.getData()}
+          onSelect={() => {
+            props.blockProps.onSelect(props.block.key);
+          }}
           onRemove={() => {
             props.blockProps.onRemove(props.block.key);
           }}
@@ -22,6 +25,9 @@ const Media = (props) => {
       case 'IMAGE':
         return (<Image
           {...entity.getData()}
+          onSelect={() => {
+            props.blockProps.onSelect(props.block.key);
+          }}
           onRemove={() => {
             props.blockProps.onRemove(props.block.key);
           }}
@@ -32,6 +38,9 @@ const Media = (props) => {
       case 'VIDEO':
         return (<Video
           {...entity.getData()}
+          onSelect={() => {
+            props.blockProps.onSelect(props.block.key);
+          }}
           onRemove={() => {
             props.blockProps.onRemove(props.block.key);
           }}
@@ -42,6 +51,9 @@ const Media = (props) => {
       case 'FLASH':
         return (<Flash
           {...entity.getData()}
+          onSelect={() => {
+            props.blockProps.onSelect(props.block.key);
+          }}
           onRemove={() => {
             props.blockProps.onRemove(props.block.key);
           }}

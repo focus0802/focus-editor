@@ -86,6 +86,9 @@ class FocusEditor extends React.Component {
         if (node.style && node.style.textAlign) {
           data.alignment = node.style.textAlign;
         }
+        if (nodeName === 'figure') {
+          return { type: 'atomic', data };
+        }
         if (nodeName === 'img' || nodeName === 'video' || nodeName === 'audio' || nodeName === 'embed') {
           return {
             type: 'atomic',
@@ -120,6 +123,24 @@ class FocusEditor extends React.Component {
       },
       blockToHTML: (block) => {
         const textAlign = block.data.alignment;
+        if (block.type === 'header-one') {
+          return <h1 style={{ textAlign }} />;
+        }
+        if (block.type === 'header-two') {
+          return <h2 style={{ textAlign }} />;
+        }
+        if (block.type === 'header-three') {
+          return <h3 style={{ textAlign }} />;
+        }
+        if (block.type === 'header-four') {
+          return <h4 style={{ textAlign }} />;
+        }
+        if (block.type === 'header-five') {
+          return <h5 style={{ textAlign }} />;
+        }
+        if (block.type === 'header-six') {
+          return <h6 style={{ textAlign }} />;
+        }
         if (block.type === 'unstyled') {
           return <p style={{ textAlign }} />;
         }
@@ -325,6 +346,18 @@ class FocusEditor extends React.Component {
           entity.data,
         );
       };
+      const onSelect = (key) => {
+        const { editorState } = this.state;
+        const contentState = editorState.getCurrentContent();
+        const block = contentState.getBlockForKey(key);
+        const selection = new SelectionState({
+          anchorKey: key,
+          anchorOffset: 0,
+          focusKey: key,
+          focusOffset: block.getLength(),
+        });
+        this.onChange(EditorState.acceptSelection(editorState, selection));
+      };
       const onRemove = (key) => {
         const { editorState } = this.state;
         const contentState = editorState.getCurrentContent();
@@ -344,6 +377,7 @@ class FocusEditor extends React.Component {
           component: Media,
           editable: false,
           props: {
+            onSelect,
             onRemove,
             onImageEdit,
             onAudioEdit,

@@ -12,6 +12,13 @@ const Image = (props) => {
             color: '#fff',
             marginRight: 8,
           }}
+          onClick={props.onSelect}
+        >选择</a>
+        <a
+          style={{
+            color: '#fff',
+            marginRight: 8,
+          }}
           onClick={props.onEdit}
         >修改</a>
         <a
@@ -27,10 +34,13 @@ const Image = (props) => {
   );
 };
 Image.propTypes = {
+  onSelect: PropTypes.func.isRequired,
   onEdit: PropTypes.func.isRequired,
   onRemove: PropTypes.func.isRequired,
 };
 Image.defaultProps = {
+  onSelect: () => {
+  },
   onEdit: () => {
   },
   onRemove: () => {

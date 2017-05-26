@@ -46,14 +46,18 @@ class TextColorPicker extends React.Component {
           onChange={(value) => {
             const { editorState } = this.props;
             const selection = editorState.getSelection();
-            const nextContentState = this.props.colors.reduce((contentState, color) => {
-              return Modifier.removeInlineStyle(contentState, selection, `color_${color}`);
+            const currentStyle = editorState.getCurrentInlineStyle();
+            const nextContentState = currentStyle.reduce((contentState, style) => {
+              if (style.startsWith('color_')) {
+                return Modifier.removeInlineStyle(contentState, selection, style);
+              } else {
+                return contentState;
+              }
             }, editorState.getCurrentContent());
             let nextEditorState = EditorState.push(editorState, nextContentState, 'change-inline-style');
-            const currentStyle = editorState.getCurrentInlineStyle();
             if (selection.isCollapsed()) {
               nextEditorState = currentStyle.reduce((state, color) => {
-                return RichUtils.toggleInlineStyle(state, `color_${color}`);
+                return RichUtils.toggleInlineStyle(state, color);
               }, nextEditorState);
             }
             if (value && !currentStyle.has(`color_${value}`)) {

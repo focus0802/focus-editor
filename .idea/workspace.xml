@@ -2,11 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97a09f4b-8a29-41ab-a8f2-a1a2dc3c3d0f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintrc" afterPath="$PROJECT_DIR$/.eslintrc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/App.js" afterPath="$PROJECT_DIR$/examples/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/FocusEditor.js" afterPath="$PROJECT_DIR$/lib/FocusEditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/blocks/Audio.js" afterPath="$PROJECT_DIR$/lib/blocks/Audio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/blocks/Flash.js" afterPath="$PROJECT_DIR$/lib/blocks/Flash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/blocks/Image.js" afterPath="$PROJECT_DIR$/lib/blocks/Image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/blocks/Media.js" afterPath="$PROJECT_DIR$/lib/blocks/Media.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/blocks/Video.js" afterPath="$PROJECT_DIR$/lib/blocks/Video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/components/BackgroundColorPicker.js" afterPath="$PROJECT_DIR$/lib/components/BackgroundColorPicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/components/TextColorPicker.js" afterPath="$PROJECT_DIR$/lib/components/TextColorPicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/focus-editor.css" afterPath="$PROJECT_DIR$/lib/focus-editor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/focus-editor.less" afterPath="$PROJECT_DIR$/lib/focus-editor.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FocusEditor.js" afterPath="$PROJECT_DIR$/src/FocusEditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocks/Audio.js" afterPath="$PROJECT_DIR$/src/blocks/Audio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocks/Flash.js" afterPath="$PROJECT_DIR$/src/blocks/Flash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocks/Image.js" afterPath="$PROJECT_DIR$/src/blocks/Image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocks/Media.js" afterPath="$PROJECT_DIR$/src/blocks/Media.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocks/Video.js" afterPath="$PROJECT_DIR$/src/blocks/Video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/BackgroundColorPicker.js" afterPath="$PROJECT_DIR$/src/components/BackgroundColorPicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TextColorPicker.js" afterPath="$PROJECT_DIR$/src/components/TextColorPicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/focus-editor.css" afterPath="$PROJECT_DIR$/src/focus-editor.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/focus-editor.less" afterPath="$PROJECT_DIR$/src/focus-editor.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,46 +40,58 @@
       <file leaf-file-name="FocusEditor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FocusEditor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="140" column="77" lean-forward="false" selection-start-line="140" selection-start-column="77" selection-end-line="140" selection-end-column="77" />
+            <state relative-caret-position="346">
+              <caret line="85" column="49" lean-forward="false" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#6212#7110#0" expanded="false" />
-                <element signature="e#7130#7983#0" expanded="false" />
-                <element signature="e#8010#8079#0" expanded="false" />
-                <element signature="e#8118#8243#0" expanded="false" />
-                <element signature="e#8280#8507#0" expanded="false" />
-                <element signature="e#8740#8819#0" expanded="false" />
-                <element signature="e#9595#9737#0" expanded="false" />
-                <element signature="e#9784#12489#0" expanded="false" />
-                <marker date="1495707935000" expanded="true" signature="12942:12970" ph="..." />
-                <marker date="1495707935000" expanded="false" signature="13085:15923" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="13132:15908" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="13192:13499" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="13220:13275" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="13527:13625" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="13651:13749" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="13776:13913" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="13945:14043" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="14071:14202" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="14236:14367" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="14397:14495" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="14520:14618" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="14643:14741" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="15935:15997" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="16069:16092" ph="..." />
-                <marker date="1495707935000" expanded="true" signature="16752:16800" ph="{...}" />
+                <element signature="e#1458#1925#0" expanded="false" />
+                <element signature="e#6906#7804#0" expanded="false" />
+                <element signature="e#7824#8677#0" expanded="false" />
+                <element signature="e#8704#8773#0" expanded="false" />
+                <element signature="e#8812#8937#0" expanded="false" />
+                <element signature="e#8974#9201#0" expanded="false" />
+                <element signature="e#9434#9513#0" expanded="false" />
+                <marker date="1495771829000" expanded="true" signature="4538:5559" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="5716:5897" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="5797:5816" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="5816:5877" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="5975:6156" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="6056:6075" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="6075:6136" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="6235:6336" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="6303:6322" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="14118:14146" ph="..." />
+                <marker date="1495771829000" expanded="false" signature="14261:17099" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="14308:17084" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="14368:14675" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="14396:14451" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="14703:14801" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="14827:14925" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="14952:15089" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="15121:15219" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="15247:15378" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="15412:15543" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="15573:15671" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="15696:15794" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="15819:15917" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="17111:17173" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="17245:17268" ph="..." />
+                <marker date="1495771829000" expanded="true" signature="17928:17976" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertImage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/media/InsertImage.js">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-93">
-              <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="323">
+              <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <marker date="1495772002000" expanded="true" signature="420:441" ph="..." />
+                <marker date="1495772002000" expanded="true" signature="671:1726" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,18 +99,8 @@
       <file leaf-file-name="Media.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/blocks/Media.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Video.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blocks/Video.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="304">
+              <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -88,28 +109,9 @@
       <file leaf-file-name="focus-editor.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/focus-editor.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="19">
+              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <marker date="1495707742000" expanded="true" signature="326:435" ph="..." />
-                <marker date="1495707742000" expanded="true" signature="413:424" ph="..." />
-                <marker date="1495707742000" expanded="true" signature="538:559" ph="..." />
-                <marker date="1495707742000" expanded="true" signature="789:1844" ph="..." />
-                <marker date="1495707742000" expanded="true" signature="1119:1823" ph="..." />
-                <marker date="1495707742000" expanded="true" signature="1119:1832" ph="..." />
-                <marker date="1495707742000" expanded="true" signature="1864:1948" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -117,18 +119,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InsertFlash.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/media/InsertFlash.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+            <state relative-caret-position="571">
+              <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -138,8 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>splitReactElement2.de</find>
-      <find>splitReactElement2.defa</find>
       <find>splitReactElement2.defau</find>
       <find>splitReactElement2.defaul</find>
       <find>splitReactElement2.default)(</find>
@@ -168,6 +158,8 @@
       <find>onChange</find>
       <find>console.log</find>
       <find>TOHtml</find>
+      <find>plugin</find>
+      <find>media</find>
     </findStrings>
     <replaceStrings>
       <replace>Button</replace>
@@ -181,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/ToggleButton.js" />
         <option value="$PROJECT_DIR$/src/components/NormalButton.js" />
         <option value="$PROJECT_DIR$/src/components/media/LinkButton.js" />
@@ -210,26 +201,28 @@
         <option value="$PROJECT_DIR$/src/components/color-picker/ColorPicker.js" />
         <option value="$PROJECT_DIR$/src/decorators/Link.js" />
         <option value="$PROJECT_DIR$/src/components/MediaControls.js" />
-        <option value="$PROJECT_DIR$/src/blocks/Audio.js" />
         <option value="$PROJECT_DIR$/src/components/HeadingPicker.js" />
         <option value="$PROJECT_DIR$/src/components/InsertLink.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/.npmignore" />
-        <option value="$PROJECT_DIR$/src/components/TextColorPicker.js" />
-        <option value="$PROJECT_DIR$/src/components/BackgroundColorPicker.js" />
         <option value="$PROJECT_DIR$/src/components/FontSizePicker.js" />
-        <option value="$PROJECT_DIR$/src/focus-editor.less" />
         <option value="$PROJECT_DIR$/node_modules/draft-convert/lib/util/getElementTagLength.js" />
-        <option value="$PROJECT_DIR$/src/blocks/Image.js" />
         <option value="$PROJECT_DIR$/src/components/media/InsertAudio.js" />
-        <option value="$PROJECT_DIR$/src/blocks/Flash.js" />
         <option value="$PROJECT_DIR$/src/components/media/InsertVideo.js" />
         <option value="$PROJECT_DIR$/src/components/media/InsertFlash.js" />
         <option value="$PROJECT_DIR$/src/components/media/InsertImage.js" />
-        <option value="$PROJECT_DIR$/examples/App.js" />
+        <option value="$PROJECT_DIR$/.eslintrc" />
+        <option value="$PROJECT_DIR$/src/components/TextColorPicker.js" />
+        <option value="$PROJECT_DIR$/src/components/BackgroundColorPicker.js" />
+        <option value="$PROJECT_DIR$/node_modules/draft-convert/lib/encodeBlock.js" />
+        <option value="$PROJECT_DIR$/src/blocks/Image.js" />
         <option value="$PROJECT_DIR$/src/blocks/Media.js" />
+        <option value="$PROJECT_DIR$/src/blocks/Audio.js" />
         <option value="$PROJECT_DIR$/src/blocks/Video.js" />
+        <option value="$PROJECT_DIR$/src/blocks/Flash.js" />
         <option value="$PROJECT_DIR$/src/FocusEditor.js" />
+        <option value="$PROJECT_DIR$/src/focus-editor.less" />
+        <option value="$PROJECT_DIR$/examples/App.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -247,9 +240,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -274,8 +264,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -355,7 +345,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="Input.&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/node_modules/antd/lib/input/Input.d.ts&#10;InsertIma&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Image&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Flash&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertV&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Video&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Video.js&#10;InsertVideo&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Me&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;Media&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;FLASH&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertAudi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;Insert&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;me&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;Link&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/decorators/Link.js&#10;IM&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Image.js&#10;convertTOHTML&#9;null&#9;null&#10;pack&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/package.json&#10;focus&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;InsertImage&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Align&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/lib/components/AlignmentControls.js&#10;Font&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/FontSizePicker.js&#10;focus-edit&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;BackgroundColor&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/BackgroundColorPicker.js&#10;Text&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;focus-ed&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;Head&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;Audio&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;InsertVide&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Ins&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;insertFlash&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertA&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;InserIm&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Inser&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;InserVi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Back&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/BackgroundColorPicker.js&#10;InsertLink&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InsertLink.js&#10;ColorPicker&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;FontSize&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/FontSizePicker.js&#10;Headi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;color-picker.less&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/color-picker/color-picker.less&#10;Tec&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;Color&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/color-picker/ColorPicker.js&#10;Inline&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InlineStyleControls.js&#10;HeadingP&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;MediaContro&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/MediaControls.js&#10;App&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/examples/App.js&#10;Draft.css&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/node_modules/draft-js/dist/Draft.css&#10;Alignment&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/AlignmentControls.js&#10;focus-e&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;InlineS&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InlineStyleControls.js" />
+    <property name="SearchEverywhereHistoryKey" value="focus-edit&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;Ima&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Image.js&#10;Media&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;Image&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Image.js&#10;encodeBlock&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/node_modules/draft-convert/lib/encodeBlock.js&#10;Back&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/BackgroundColorPicker.js&#10;ColorPicker&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;Input.&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/node_modules/antd/lib/input/Input.d.ts&#10;InsertIma&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Flash&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertV&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Video&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Video.js&#10;InsertVideo&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Me&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;FLASH&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertAudi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;Insert&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;me&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Media.js&#10;Link&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/decorators/Link.js&#10;IM&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/blocks/Image.js&#10;convertTOHTML&#9;null&#9;null&#10;pack&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/package.json&#10;focus&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;InsertImage&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Align&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/lib/components/AlignmentControls.js&#10;Font&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/FontSizePicker.js&#10;BackgroundColor&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/BackgroundColorPicker.js&#10;Text&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;focus-ed&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/focus-editor.less&#10;Head&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;Audio&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;InsertVide&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;Ins&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;insertFlash&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertFlash.js&#10;InsertA&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertAudio.js&#10;InserIm&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertImage.js&#10;Inser&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;InserVi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/media/InsertVideo.js&#10;InsertLink&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InsertLink.js&#10;FontSize&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/FontSizePicker.js&#10;Headi&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;color-picker.less&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/color-picker/color-picker.less&#10;Tec&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/TextColorPicker.js&#10;Color&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/color-picker/ColorPicker.js&#10;Inline&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/InlineStyleControls.js&#10;HeadingP&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/HeadingPicker.js&#10;MediaContro&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/MediaControls.js&#10;App&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/examples/App.js&#10;Draft.css&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/node_modules/draft-js/dist/Draft.css&#10;Alignment&#9;FILE&#9;file:///Users/focus/Projects/focus-editor/src/components/AlignmentControls.js" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -506,8 +496,8 @@
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="npm.pub" />
-        <item index="1" class="java.lang.String" itemvalue="npm.publish" />
-        <item index="2" class="java.lang.String" itemvalue="npm.start" />
+        <item index="1" class="java.lang.String" itemvalue="npm.start" />
+        <item index="2" class="java.lang.String" itemvalue="npm.publish" />
         <item index="3" class="java.lang.String" itemvalue="npm.babel" />
       </list>
     </recent_temporary>
@@ -534,6 +524,8 @@
       <workItem from="1495499667320" duration="25219000" />
       <workItem from="1495585202804" duration="26124000" />
       <workItem from="1495671576449" duration="33643000" />
+      <workItem from="1495708260041" duration="470000" />
+      <workItem from="1495760429091" duration="8326000" />
     </task>
     <task id="LOCAL-00001" summary="常规更新">
       <created>1495620504625</created>
@@ -574,23 +566,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157877000" />
+    <option name="totallyTimeSpent" value="166673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1278" y="23" width="1280" height="1341" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1898223" sideWeight="0.81828076" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2792157" sideWeight="0.5056543" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1898223" sideWeight="0.16974972" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2792157" sideWeight="0.49434572" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30980393" sideWeight="0.497558" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1898223" sideWeight="0.83025026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1898223" sideWeight="0.18171926" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2792157" sideWeight="0.49434572" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30980393" sideWeight="0.497558" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -598,7 +588,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -621,20 +613,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/focus-editor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/draft-js/dist/Draft.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="10" column="2249" lean-forward="true" selection-start-line="10" selection-start-column="2249" selection-end-line="10" selection-end-column="2249" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/FullScreenControls.js" />
     <entry file="file://$PROJECT_DIR$/src/components/InlineStyleControls.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -647,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -669,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,33 +674,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="683" column="22" lean-forward="true" selection-start-line="683" selection-start-column="22" selection-end-line="683" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MediaControls.js" />
-    <entry file="file://$PROJECT_DIR$/src/blocks/Audio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-export-html/typings/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-export-html/typings/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/components/HeadingPicker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2">
           <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,7 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,27 +742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BackgroundColorPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TextColorPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/components/AlignmentControls.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="139" column="45" lean-forward="false" selection-start-line="139" selection-start-column="45" selection-end-line="139" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,9 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,75 +795,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-import-html/lib/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-import-element/lib/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-import-html/lib/stateFromHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-import-html/lib/parseHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/Image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-import-html/lib/main.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-import-element/lib/main.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-import-html/lib/stateFromHTML.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/draft-js-import-html/lib/parseHTML.js" />
     <entry file="file://$PROJECT_DIR$/src/components/media/InsertAudio.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="53" column="15" lean-forward="false" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/focus-editor.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/Flash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,15 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="64" column="34" lean-forward="true" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/media/InsertFlash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,90 +820,164 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-349">
           <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/media/InsertImage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
+        <state relative-caret-position="1140">
           <caret line="64" column="12" lean-forward="false" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/App.js">
+    <entry file="file://$PROJECT_DIR$/src/components/media/InsertFlash.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1495707742000" expanded="true" signature="326:435" ph="..." />
-            <marker date="1495707742000" expanded="true" signature="413:424" ph="..." />
-            <marker date="1495707742000" expanded="true" signature="538:559" ph="..." />
-            <marker date="1495707742000" expanded="true" signature="789:1844" ph="..." />
-            <marker date="1495707742000" expanded="true" signature="1119:1823" ph="..." />
-            <marker date="1495707742000" expanded="true" signature="1119:1832" ph="..." />
-            <marker date="1495707742000" expanded="true" signature="1864:1948" ph="..." />
-          </folding>
+        <state relative-caret-position="855">
+          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blocks/Media.js">
+    <entry file="file://$PROJECT_DIR$/src/components/TextColorPicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="440">
+          <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BackgroundColorPicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/draft-convert/lib/encodeBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="73" column="7" lean-forward="false" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/blocks/Video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="247">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/Image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/Audio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/Flash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blocks/Media.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FocusEditor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="140" column="77" lean-forward="false" selection-start-line="140" selection-start-column="77" selection-end-line="140" selection-end-column="77" />
+        <state relative-caret-position="346">
+          <caret line="85" column="49" lean-forward="false" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#6212#7110#0" expanded="false" />
-            <element signature="e#7130#7983#0" expanded="false" />
-            <element signature="e#8010#8079#0" expanded="false" />
-            <element signature="e#8118#8243#0" expanded="false" />
-            <element signature="e#8280#8507#0" expanded="false" />
-            <element signature="e#8740#8819#0" expanded="false" />
-            <element signature="e#9595#9737#0" expanded="false" />
-            <element signature="e#9784#12489#0" expanded="false" />
-            <marker date="1495707935000" expanded="true" signature="12942:12970" ph="..." />
-            <marker date="1495707935000" expanded="false" signature="13085:15923" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="13132:15908" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="13192:13499" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="13220:13275" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="13527:13625" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="13651:13749" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="13776:13913" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="13945:14043" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="14071:14202" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="14236:14367" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="14397:14495" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="14520:14618" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="14643:14741" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="15935:15997" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="16069:16092" ph="..." />
-            <marker date="1495707935000" expanded="true" signature="16752:16800" ph="{...}" />
+            <element signature="e#1458#1925#0" expanded="false" />
+            <element signature="e#6906#7804#0" expanded="false" />
+            <element signature="e#7824#8677#0" expanded="false" />
+            <element signature="e#8704#8773#0" expanded="false" />
+            <element signature="e#8812#8937#0" expanded="false" />
+            <element signature="e#8974#9201#0" expanded="false" />
+            <element signature="e#9434#9513#0" expanded="false" />
+            <marker date="1495771829000" expanded="true" signature="4538:5559" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="5716:5897" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="5797:5816" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="5816:5877" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="5975:6156" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="6056:6075" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="6075:6136" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="6235:6336" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="6303:6322" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="14118:14146" ph="..." />
+            <marker date="1495771829000" expanded="false" signature="14261:17099" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="14308:17084" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="14368:14675" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="14396:14451" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="14703:14801" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="14827:14925" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="14952:15089" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="15121:15219" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="15247:15378" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="15412:15543" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="15573:15671" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="15696:15794" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="15819:15917" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="17111:17173" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="17245:17268" ph="..." />
+            <marker date="1495771829000" expanded="true" signature="17928:17976" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/focus-editor.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1495772002000" expanded="true" signature="420:441" ph="..." />
+            <marker date="1495772002000" expanded="true" signature="671:1726" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="571">
+          <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding />
         </state>
       </provider>
