@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'class-names';
-import { Affix } from 'antd';
 import { Editor, EditorState, Entity, SelectionState, Modifier, CompositeDecorator } from 'draft-js';
 import { convertFromHTML, convertToHTML } from 'draft-convert';
 import 'font-awesome/css/font-awesome.min.css';
@@ -417,99 +416,98 @@ class FocusEditor extends React.Component {
         { 'focus-editor-fullscreen': this.state.fullScreen },
       )}
     >
-      <Affix>
-        <div className="focus-editor-toolbar">
-          <div className="focus-editor-controls-container">
-            <ToolbarButton
-              label={<i className="fa fa-arrows-alt" />}
-              tooltip="全屏"
-              onClick={() => {
-                this.setState({ fullScreen: !this.state.fullScreen });
-              }}
-              active={this.state.fullScreen}
-            />
-          </div>
-          <HistoryControls
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-          />
-          <HeadingPicker
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-          />
-          <FontSizePicker
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-            fontSizes={this.fontSizes}
-          />
-          <InlineStyleControls
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-          />
-          <TextColorPicker
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-            colors={this.colors}
-          />
-          <BackgroundColorPicker
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-            colors={this.colors}
-          />
-          <AlignmentControls
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-          />
-          <ListControls
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-          />
-          <LinkControls
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-          />
-          <InsertAudio
-            ref={(insertAudio) => {
-              this.insertAudio = insertAudio;
+      <div className="focus-editor-toolbar">
+        <div className="focus-editor-controls-container">
+          <ToolbarButton
+            label={<i className="fa fa-arrows-alt" />}
+            tooltip="全屏"
+            onClick={() => {
+              this.setState({ fullScreen: !this.state.fullScreen });
             }}
-            editor={this.editor}
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-            onUpload={this.props.onAudioUpload}
-          />
-          <InsertImage
-            ref={(insertImage) => {
-              this.insertImage = insertImage;
-            }}
-            editor={this.editor}
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-            onUpload={this.props.onImageUpload}
-          />
-          <InsertVideo
-            ref={(insertVideo) => {
-              this.insertVideo = insertVideo;
-            }}
-            editor={this.editor}
-            editorState={this.state.editorState}
-            onChange={this.onChange}
-            onUpload={this.props.onVideoUpload}
-          />
-          <InsertFlash
-            ref={(insertFlash) => {
-              this.insertFlash = insertFlash;
-            }}
-            editor={this.editor}
-            editorState={this.state.editorState}
-            onChange={this.onChange}
+            active={this.state.fullScreen}
           />
         </div>
-      </Affix>
+        <HistoryControls
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+        />
+        <HeadingPicker
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+        />
+        <FontSizePicker
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+          fontSizes={this.fontSizes}
+        />
+        <InlineStyleControls
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+        />
+        <TextColorPicker
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+          colors={this.colors}
+        />
+        <BackgroundColorPicker
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+          colors={this.colors}
+        />
+        <AlignmentControls
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+        />
+        <ListControls
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+        />
+        <LinkControls
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+        />
+        <InsertAudio
+          ref={(insertAudio) => {
+            this.insertAudio = insertAudio;
+          }}
+          editor={this.editor}
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+          onUpload={this.props.onAudioUpload}
+        />
+        <InsertImage
+          ref={(insertImage) => {
+            this.insertImage = insertImage;
+          }}
+          editor={this.editor}
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+          onUpload={this.props.onImageUpload}
+        />
+        <InsertVideo
+          ref={(insertVideo) => {
+            this.insertVideo = insertVideo;
+          }}
+          editor={this.editor}
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+          onUpload={this.props.onVideoUpload}
+        />
+        <InsertFlash
+          ref={(insertFlash) => {
+            this.insertFlash = insertFlash;
+          }}
+          editor={this.editor}
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+        />
+      </div>
       <div
         className="focus-editor-container"
         onClick={() => {
           this.editor.focus();
         }}
+        style={{ height: this.state.fullScreen ? undefined : this.props.editorHeight }}
       >
         <Editor
           ref={(editor) => {
@@ -527,12 +525,14 @@ class FocusEditor extends React.Component {
   }
 }
 FocusEditor.propTypes = {
+  editorHeight: PropTypes.any,
   onAudioUpload: PropTypes.func.isRequired,
   onImageUpload: PropTypes.func.isRequired,
   onVideoUpload: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 FocusEditor.defaultProps = {
+  editorHeight: 600,
   onAudioUpload: () => {
   },
   onImageUpload: () => {
