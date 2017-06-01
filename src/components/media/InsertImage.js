@@ -47,6 +47,12 @@ class InsertImage extends React.Component {
       entityKey,
       data,
     });
+    this.props.form.setFields({
+      src: { value: data.src },
+      alt: { value: data.alt },
+      width: { value: data.style.width },
+      height: { value: data.style.height },
+    });
   }
 
   newImage(url) {
@@ -285,7 +291,7 @@ class InsertImage extends React.Component {
               <Form.Item wrapperCol={{ offset: 4 }}>
                 {getFieldDecorator('fixed_ratio', {
                   valuePropName: 'checked',
-                  initialValue: true,
+                  initialValue: false,
                 })(
                   <Checkbox
                     onChange={(e) => {

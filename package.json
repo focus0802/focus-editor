@@ -1,19 +1,19 @@
 {
   "name": "focus-editor",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "dependencies": {
     "antd": "^2.10.1",
     "class-names": "^1.0.0",
     "draft-convert": "^1.4.6",
     "draft-js": "^0.10.1",
     "font-awesome": "^4.7.0",
-    "prop-types": "latest",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
-    "babel-core": "6.22.1",
+    "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-jest": "18.0.0",
     "babel-loader": "6.2.10",

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'class-names';
-import { Editor, EditorState, Entity, SelectionState, Modifier, CompositeDecorator } from 'draft-js';
+import { Editor, EditorState, ContentState, Entity, SelectionState, Modifier, CompositeDecorator } from 'draft-js';
 import { convertFromHTML, convertToHTML } from 'draft-convert';
 import 'font-awesome/css/font-awesome.min.css';
 import './focus-editor.css';
@@ -70,12 +70,14 @@ class FocusEditor extends React.Component {
           return Entity.create('VIDEO', 'IMMUTABLE', {
             src: node.src,
             autoPlay: node.autoplay,
+            controls: node.controls,
             style: { width: node.style.width, height: node.style.height },
           });
         }
         if (nodeName === 'audio') {
           return Entity.create('AUDIO', 'IMMUTABLE', {
             src: node.src,
+            controls: node.controls,
             autoPlay: node.autoplay,
           });
         }
@@ -102,6 +104,16 @@ class FocusEditor extends React.Component {
   }
 
   static toHTML(contentState) {
+    const nonBreakingContentState = ContentState.createFromBlockArray(
+      contentState.getBlocksAsArray().map(
+        (block) => {
+          return block.update('text', (text) => {
+            const reg = new RegExp(' ', 'g');
+            return text.replace(reg, '\xA0');
+          });
+        },
+      ),
+    );
     const html = convertToHTML({
       styleToHTML: (style) => {
         if (style.startsWith('fontSize_')) {
@@ -158,14 +170,24 @@ class FocusEditor extends React.Component {
         }
         if (entity.type === 'VIDEO') {
           return (<figure>
-            <video src={entity.data.src} autoPlay={entity.data.autoPlay} style={entity.data.style}>
+            <video
+              src={entity.data.src}
+              autoPlay={entity.data.autoPlay}
+              controls={entity.data.controls}
+              style={entity.data.style}
+            >
               <track kind="captions" />
             </video>
           </figure>);
         }
         if (entity.type === 'AUDIO') {
           return (<figure>
-            <audio src={entity.data.src} autoPlay={entity.data.autoPlay} style={entity.data.style}>
+            <audio
+              src={entity.data.src}
+              autoPlay={entity.data.autoPlay}
+              controls={entity.data.controls}
+              style={entity.data.style}
+            >
               <track kind="captions" />
             </audio>
           </figure>);
@@ -177,8 +199,9 @@ class FocusEditor extends React.Component {
         }
         return originalText;
       },
-    })(contentState);
-    return html === '<p></p>' ? undefined : html;
+    })(nonBreakingContentState);
+    const reg = new RegExp('\xA0', 'g');
+    return html === '<p></p>' ? undefined : html.replace(reg, '&nbsp;');
   }
 
   constructor(props) {

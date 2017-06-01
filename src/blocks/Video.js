@@ -20,7 +20,7 @@ const Video = (props) => {
       <video
         style={props.style}
         src={props.src}
-        controls
+        controls={!!props.controls}
         autoPlay={!!props.autoPlay}
       >
         <track kind="captions" />

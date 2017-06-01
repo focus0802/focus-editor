@@ -34,7 +34,13 @@ class InsertVideo extends React.Component {
       ratio: (data.width / data.height) || 1,
       entityKey,
     });
-    this.props.form.setFieldsValue({ src: data.src, width: data.width, height: data.height });
+    this.props.form.setFieldsValue({
+      src: data.src,
+      autoPlay: data.autoPlay,
+      controls: data.controls,
+      width: data.style.width,
+      height: data.style.height,
+    });
   }
 
   closeModal() {
@@ -73,6 +79,8 @@ class InsertVideo extends React.Component {
                   this.state.entityKey,
                   {
                     src: values.src,
+                    autoPlay: values.autoPlay,
+                    controls: values.controls,
                     style: {
                       width: values.width,
                       height: values.height,
@@ -91,6 +99,8 @@ class InsertVideo extends React.Component {
                   'IMMUTABLE',
                   {
                     src: values.src,
+                    autoPlay: values.autoPlay,
+                    controls: values.controls,
                     style: {
                       width: values.width,
                       height: values.height,
@@ -256,7 +266,7 @@ class InsertVideo extends React.Component {
             </Col>
             <Col span="8">
               <Form.Item wrapperCol={{ offset: 4 }}>
-                {getFieldDecorator('fixed_ratio', { valuePropName: 'checked', initialValue: true })(
+                {getFieldDecorator('fixed_ratio', { valuePropName: 'checked', initialValue: false })(
                   <Checkbox
                     onChange={(e) => {
                       if (e.target.checked) {
@@ -282,6 +292,26 @@ class InsertVideo extends React.Component {
                       }
                     }}
                   >锁定比例</Checkbox>,
+                )}
+              </Form.Item>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={8}>
+              <Form.Item
+                wrapperCol={{ offset: 12 }}
+              >
+                {getFieldDecorator('autoPlay', { valuePropName: 'checked', initialValue: false })(
+                  <Checkbox>自动播放</Checkbox>,
+                )}
+              </Form.Item>
+            </Col>
+            <Col span={8}>
+              <Form.Item
+                wrapperCol={{ offset: 12 }}
+              >
+                {getFieldDecorator('controls', { valuePropName: 'checked', initialValue: true })(
+                  <Checkbox>显示控件</Checkbox>,
                 )}
               </Form.Item>
             </Col>
